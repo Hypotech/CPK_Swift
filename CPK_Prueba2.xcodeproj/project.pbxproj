@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB0745FE1A94E97000B0EEED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0745FD1A94E97000B0EEED /* AppDelegate.swift */; };
+		AB0746001A94E97000B0EEED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0745FF1A94E97000B0EEED /* ViewController.swift */; };
+		AB0746031A94E97000B0EEED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0746011A94E97000B0EEED /* Main.storyboard */; };
+		AB0746051A94E97000B0EEED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0746041A94E97000B0EEED /* Images.xcassets */; };
+		AB0746081A94E97000B0EEED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0746061A94E97000B0EEED /* LaunchScreen.xib */; };
+		AB0746141A94E97000B0EEED /* CPK_Prueba2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0746131A94E97000B0EEED /* CPK_Prueba2Tests.swift */; };
+		AB07466F1A94F24A00B0EEED /* wrap_bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = AB07461E1A94F24A00B0EEED /* wrap_bullet.png */; };
+		AB0746701A94F24A00B0EEED /* cerveza_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746201A94F24A00B0EEED /* cerveza_foto.jpg */; };
+		AB0746711A94F24A00B0EEED /* coctelalcohol_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746211A94F24A00B0EEED /* coctelalcohol_foto.jpg */; };
+		AB0746721A94F24A00B0EEED /* coctelsnalcohol_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746221A94F24A00B0EEED /* coctelsnalcohol_foto.jpg */; };
+		AB0746731A94F24A00B0EEED /* ensaladas_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746231A94F24A00B0EEED /* ensaladas_foto.jpg */; };
+		AB0746741A94F24A00B0EEED /* entradas_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746241A94F24A00B0EEED /* entradas_foto.jpg */; };
+		AB0746751A94F24A00B0EEED /* especialidades_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746251A94F24A00B0EEED /* especialidades_foto.jpg */; };
+		AB0746761A94F24A00B0EEED /* margarita_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746261A94F24A00B0EEED /* margarita_foto.jpg */; };
+		AB0746771A94F24A00B0EEED /* martinis_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746271A94F24A00B0EEED /* martinis_foto.jpg */; };
+		AB0746781A94F24A00B0EEED /* mojitos_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746281A94F24A00B0EEED /* mojitos_foto.jpg */; };
+		AB0746791A94F24A00B0EEED /* pastas_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746291A94F24A00B0EEED /* pastas_foto.jpg */; };
+		AB07467A1A94F24A00B0EEED /* pizzasthin_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07462A1A94F24A00B0EEED /* pizzasthin_foto.jpg */; };
+		AB07467B1A94F24A00B0EEED /* pizzastrad_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07462B1A94F24A00B0EEED /* pizzastrad_foto.jpg */; };
+		AB07467C1A94F24A00B0EEED /* refrescos_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07462C1A94F24A00B0EEED /* refrescos_foto.jpg */; };
+		AB07467D1A94F24A00B0EEED /* sandwiches_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07462D1A94F24A00B0EEED /* sandwiches_foto.jpg */; };
+		AB07467E1A94F24A00B0EEED /* sangrias_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07462E1A94F24A00B0EEED /* sangrias_foto.jpg */; };
+		AB07467F1A94F24A00B0EEED /* seleccionligera_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07462F1A94F24A00B0EEED /* seleccionligera_foto.jpg */; };
+		AB0746801A94F24A00B0EEED /* sinalcohol_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746301A94F24A00B0EEED /* sinalcohol_foto.jpg */; };
+		AB0746811A94F24A00B0EEED /* sopas_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746311A94F24A00B0EEED /* sopas_foto.jpg */; };
+		AB0746821A94F24A00B0EEED /* vinos_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746321A94F24A00B0EEED /* vinos_foto.jpg */; };
+		AB0746831A94F24A00B0EEED /* cerveza_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746341A94F24A00B0EEED /* cerveza_foto.jpg */; };
+		AB0746841A94F24A00B0EEED /* coctelalcohol_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746351A94F24A00B0EEED /* coctelalcohol_foto.jpg */; };
+		AB0746851A94F24A00B0EEED /* coctelsnalcohol_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746361A94F24A00B0EEED /* coctelsnalcohol_foto.jpg */; };
+		AB0746861A94F24A00B0EEED /* margarita_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746371A94F24A00B0EEED /* margarita_foto.jpg */; };
+		AB0746871A94F24A00B0EEED /* martinis_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746381A94F24A00B0EEED /* martinis_foto.jpg */; };
+		AB0746881A94F24A00B0EEED /* mojitos_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746391A94F24A00B0EEED /* mojitos_foto.jpg */; };
+		AB0746891A94F24A00B0EEED /* pizzathin_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07463A1A94F24A00B0EEED /* pizzathin_foto.jpg */; };
+		AB07468A1A94F24A00B0EEED /* pizzatrad_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07463B1A94F24A00B0EEED /* pizzatrad_foto.jpg */; };
+		AB07468B1A94F24A00B0EEED /* refrescos_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07463C1A94F24A00B0EEED /* refrescos_foto.jpg */; };
+		AB07468C1A94F24A00B0EEED /* sangrias_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07463D1A94F24A00B0EEED /* sangrias_foto.jpg */; };
+		AB07468D1A94F24A00B0EEED /* sinalcohol_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07463E1A94F24A00B0EEED /* sinalcohol_foto.jpg */; };
+		AB07468E1A94F24A00B0EEED /* vinos_foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07463F1A94F24A00B0EEED /* vinos_foto.jpg */; };
+		AB07468F1A94F24A00B0EEED /* light_label.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0746411A94F24A00B0EEED /* light_label.png */; };
+		AB0746901A94F24A00B0EEED /* logo_cpk_horizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0746421A94F24A00B0EEED /* logo_cpk_horizontal.png */; };
+		AB0746911A94F24A00B0EEED /* logo_cpk_vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0746431A94F24A00B0EEED /* logo_cpk_vertical.png */; };
+		AB0746921A94F24A00B0EEED /* menu_boton.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0746441A94F24A00B0EEED /* menu_boton.png */; };
+		AB0746931A94F24A00B0EEED /* platillofav_label.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0746451A94F24A00B0EEED /* platillofav_label.png */; };
+		AB0746941A94F24A00B0EEED /* platillos_contenedor.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0746461A94F24A00B0EEED /* platillos_contenedor.png */; };
+		AB0746951A94F24A00B0EEED /* productonuev_label.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0746471A94F24A00B0EEED /* productonuev_label.png */; };
+		AB0746961A94F24A00B0EEED /* flecha_siguiente.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0746491A94F24A00B0EEED /* flecha_siguiente.png */; };
+		AB0746971A94F24A00B0EEED /* fondo_intro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07464A1A94F24A00B0EEED /* fondo_intro.jpg */; };
+		AB0746981A94F24A00B0EEED /* headline_intro.png in Resources */ = {isa = PBXBuildFile; fileRef = AB07464B1A94F24A00B0EEED /* headline_intro.png */; };
+		AB0746991A94F24A00B0EEED /* flecha_siguiente_blanco.png in Resources */ = {isa = PBXBuildFile; fileRef = AB07464D1A94F24A00B0EEED /* flecha_siguiente_blanco.png */; };
+		AB07469A1A94F24A00B0EEED /* pizza_bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = AB07464F1A94F24A00B0EEED /* pizza_bullet.png */; };
+		AB07469B1A94F24A00B0EEED /* Bebidas_Menu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746511A94F24A00B0EEED /* Bebidas_Menu.jpg */; };
+		AB07469C1A94F24A00B0EEED /* Cervezas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746521A94F24A00B0EEED /* Cervezas.jpg */; };
+		AB07469D1A94F24A00B0EEED /* Cierre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746531A94F24A00B0EEED /* Cierre.jpg */; };
+		AB07469E1A94F24A00B0EEED /* Cocteles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746541A94F24A00B0EEED /* Cocteles.jpg */; };
+		AB07469F1A94F24A00B0EEED /* Cocteles_Alcohol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746551A94F24A00B0EEED /* Cocteles_Alcohol.jpg */; };
+		AB0746A01A94F24A00B0EEED /* Cocteles_SnAlcohol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746561A94F24A00B0EEED /* Cocteles_SnAlcohol.jpg */; };
+		AB0746A11A94F24A00B0EEED /* Ensaladas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746571A94F24A00B0EEED /* Ensaladas.jpg */; };
+		AB0746A21A94F24A00B0EEED /* Entradas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746581A94F24A00B0EEED /* Entradas.jpg */; };
+		AB0746A31A94F24A00B0EEED /* Especialidades.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746591A94F24A00B0EEED /* Especialidades.jpg */; };
+		AB0746A41A94F24A00B0EEED /* Introduccion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07465A1A94F24A00B0EEED /* Introduccion.jpg */; };
+		AB0746A51A94F24A00B0EEED /* Margaritas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07465B1A94F24A00B0EEED /* Margaritas.jpg */; };
+		AB0746A61A94F24A00B0EEED /* Martinis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07465C1A94F24A00B0EEED /* Martinis.jpg */; };
+		AB0746A71A94F24A00B0EEED /* Menu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07465D1A94F24A00B0EEED /* Menu.jpg */; };
+		AB0746A81A94F24A00B0EEED /* Mojitos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07465E1A94F24A00B0EEED /* Mojitos.jpg */; };
+		AB0746A91A94F24A00B0EEED /* Pastas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07465F1A94F24A00B0EEED /* Pastas.jpg */; };
+		AB0746AA1A94F24A00B0EEED /* Pizza_masatradicional.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746601A94F24A00B0EEED /* Pizza_masatradicional.jpg */; };
+		AB0746AB1A94F24A00B0EEED /* Pizza_thincrust.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746611A94F24A00B0EEED /* Pizza_thincrust.jpg */; };
+		AB0746AC1A94F24A00B0EEED /* Pizzas_Menu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746621A94F24A00B0EEED /* Pizzas_Menu.jpg */; };
+		AB0746AD1A94F24A00B0EEED /* Refrescos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746631A94F24A00B0EEED /* Refrescos.jpg */; };
+		AB0746AE1A94F24A00B0EEED /* Sandwiches.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746641A94F24A00B0EEED /* Sandwiches.jpg */; };
+		AB0746AF1A94F24A00B0EEED /* Sangrias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746651A94F24A00B0EEED /* Sangrias.jpg */; };
+		AB0746B01A94F24A00B0EEED /* Selecciones_ligeras.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746661A94F24A00B0EEED /* Selecciones_ligeras.jpg */; };
+		AB0746B11A94F24A00B0EEED /* SinAlcohol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746671A94F24A00B0EEED /* SinAlcohol.jpg */; };
+		AB0746B21A94F24A00B0EEED /* Sopas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746681A94F24A00B0EEED /* Sopas.jpg */; };
+		AB0746B31A94F24A00B0EEED /* Splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0746691A94F24A00B0EEED /* Splash.jpg */; };
+		AB0746B41A94F24A00B0EEED /* Vinos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07466A1A94F24A00B0EEED /* Vinos.jpg */; };
+		AB0746B51A94F24A00B0EEED /* fondo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB07466C1A94F24A00B0EEED /* fondo.jpg */; };
+		AB0746B61A94F24A00B0EEED /* gesto_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AB07466D1A94F24A00B0EEED /* gesto_icon.png */; };
+		AB0746B71A94F24A00B0EEED /* tagline.png in Resources */ = {isa = PBXBuildFile; fileRef = AB07466E1A94F24A00B0EEED /* tagline.png */; };
+		AB3CF5BC1A9562C700E28D10 /* Menu_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CF5BB1A9562C700E28D10 /* Menu_VC.swift */; };
+		ABDA35181A951F27008F1289 /* Intro_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDA35171A951F27008F1289 /* Intro_VC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB07460E1A94E97000B0EEED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB0745F01A94E97000B0EEED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB0745F71A94E97000B0EEED;
+			remoteInfo = CPK_Prueba2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB0745F81A94E97000B0EEED /* CPK_Prueba2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPK_Prueba2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0745FC1A94E97000B0EEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB0745FD1A94E97000B0EEED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB0745FF1A94E97000B0EEED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB0746021A94E97000B0EEED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB0746041A94E97000B0EEED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB0746071A94E97000B0EEED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AB07460D1A94E97000B0EEED /* CPK_Prueba2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPK_Prueba2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0746121A94E97000B0EEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB0746131A94E97000B0EEED /* CPK_Prueba2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPK_Prueba2Tests.swift; sourceTree = "<group>"; };
+		AB07461E1A94F24A00B0EEED /* wrap_bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrap_bullet.png; sourceTree = "<group>"; };
+		AB0746201A94F24A00B0EEED /* cerveza_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cerveza_foto.jpg; sourceTree = "<group>"; };
+		AB0746211A94F24A00B0EEED /* coctelalcohol_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coctelalcohol_foto.jpg; sourceTree = "<group>"; };
+		AB0746221A94F24A00B0EEED /* coctelsnalcohol_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coctelsnalcohol_foto.jpg; sourceTree = "<group>"; };
+		AB0746231A94F24A00B0EEED /* ensaladas_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ensaladas_foto.jpg; sourceTree = "<group>"; };
+		AB0746241A94F24A00B0EEED /* entradas_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = entradas_foto.jpg; sourceTree = "<group>"; };
+		AB0746251A94F24A00B0EEED /* especialidades_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = especialidades_foto.jpg; sourceTree = "<group>"; };
+		AB0746261A94F24A00B0EEED /* margarita_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = margarita_foto.jpg; sourceTree = "<group>"; };
+		AB0746271A94F24A00B0EEED /* martinis_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martinis_foto.jpg; sourceTree = "<group>"; };
+		AB0746281A94F24A00B0EEED /* mojitos_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mojitos_foto.jpg; sourceTree = "<group>"; };
+		AB0746291A94F24A00B0EEED /* pastas_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pastas_foto.jpg; sourceTree = "<group>"; };
+		AB07462A1A94F24A00B0EEED /* pizzasthin_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pizzasthin_foto.jpg; sourceTree = "<group>"; };
+		AB07462B1A94F24A00B0EEED /* pizzastrad_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pizzastrad_foto.jpg; sourceTree = "<group>"; };
+		AB07462C1A94F24A00B0EEED /* refrescos_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = refrescos_foto.jpg; sourceTree = "<group>"; };
+		AB07462D1A94F24A00B0EEED /* sandwiches_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sandwiches_foto.jpg; sourceTree = "<group>"; };
+		AB07462E1A94F24A00B0EEED /* sangrias_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sangrias_foto.jpg; sourceTree = "<group>"; };
+		AB07462F1A94F24A00B0EEED /* seleccionligera_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seleccionligera_foto.jpg; sourceTree = "<group>"; };
+		AB0746301A94F24A00B0EEED /* sinalcohol_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sinalcohol_foto.jpg; sourceTree = "<group>"; };
+		AB0746311A94F24A00B0EEED /* sopas_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sopas_foto.jpg; sourceTree = "<group>"; };
+		AB0746321A94F24A00B0EEED /* vinos_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vinos_foto.jpg; sourceTree = "<group>"; };
+		AB0746341A94F24A00B0EEED /* cerveza_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cerveza_foto.jpg; sourceTree = "<group>"; };
+		AB0746351A94F24A00B0EEED /* coctelalcohol_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coctelalcohol_foto.jpg; sourceTree = "<group>"; };
+		AB0746361A94F24A00B0EEED /* coctelsnalcohol_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coctelsnalcohol_foto.jpg; sourceTree = "<group>"; };
+		AB0746371A94F24A00B0EEED /* margarita_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = margarita_foto.jpg; sourceTree = "<group>"; };
+		AB0746381A94F24A00B0EEED /* martinis_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martinis_foto.jpg; sourceTree = "<group>"; };
+		AB0746391A94F24A00B0EEED /* mojitos_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mojitos_foto.jpg; sourceTree = "<group>"; };
+		AB07463A1A94F24A00B0EEED /* pizzathin_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pizzathin_foto.jpg; sourceTree = "<group>"; };
+		AB07463B1A94F24A00B0EEED /* pizzatrad_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pizzatrad_foto.jpg; sourceTree = "<group>"; };
+		AB07463C1A94F24A00B0EEED /* refrescos_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = refrescos_foto.jpg; sourceTree = "<group>"; };
+		AB07463D1A94F24A00B0EEED /* sangrias_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sangrias_foto.jpg; sourceTree = "<group>"; };
+		AB07463E1A94F24A00B0EEED /* sinalcohol_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sinalcohol_foto.jpg; sourceTree = "<group>"; };
+		AB07463F1A94F24A00B0EEED /* vinos_foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vinos_foto.jpg; sourceTree = "<group>"; };
+		AB0746411A94F24A00B0EEED /* light_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_label.png; sourceTree = "<group>"; };
+		AB0746421A94F24A00B0EEED /* logo_cpk_horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_cpk_horizontal.png; sourceTree = "<group>"; };
+		AB0746431A94F24A00B0EEED /* logo_cpk_vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_cpk_vertical.png; sourceTree = "<group>"; };
+		AB0746441A94F24A00B0EEED /* menu_boton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_boton.png; sourceTree = "<group>"; };
+		AB0746451A94F24A00B0EEED /* platillofav_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platillofav_label.png; sourceTree = "<group>"; };
+		AB0746461A94F24A00B0EEED /* platillos_contenedor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platillos_contenedor.png; sourceTree = "<group>"; };
+		AB0746471A94F24A00B0EEED /* productonuev_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = productonuev_label.png; sourceTree = "<group>"; };
+		AB0746491A94F24A00B0EEED /* flecha_siguiente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flecha_siguiente.png; sourceTree = "<group>"; };
+		AB07464A1A94F24A00B0EEED /* fondo_intro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo_intro.jpg; sourceTree = "<group>"; };
+		AB07464B1A94F24A00B0EEED /* headline_intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headline_intro.png; sourceTree = "<group>"; };
+		AB07464D1A94F24A00B0EEED /* flecha_siguiente_blanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flecha_siguiente_blanco.png; sourceTree = "<group>"; };
+		AB07464F1A94F24A00B0EEED /* pizza_bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizza_bullet.png; sourceTree = "<group>"; };
+		AB0746511A94F24A00B0EEED /* Bebidas_Menu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bebidas_Menu.jpg; sourceTree = "<group>"; };
+		AB0746521A94F24A00B0EEED /* Cervezas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cervezas.jpg; sourceTree = "<group>"; };
+		AB0746531A94F24A00B0EEED /* Cierre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cierre.jpg; sourceTree = "<group>"; };
+		AB0746541A94F24A00B0EEED /* Cocteles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cocteles.jpg; sourceTree = "<group>"; };
+		AB0746551A94F24A00B0EEED /* Cocteles_Alcohol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cocteles_Alcohol.jpg; sourceTree = "<group>"; };
+		AB0746561A94F24A00B0EEED /* Cocteles_SnAlcohol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cocteles_SnAlcohol.jpg; sourceTree = "<group>"; };
+		AB0746571A94F24A00B0EEED /* Ensaladas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ensaladas.jpg; sourceTree = "<group>"; };
+		AB0746581A94F24A00B0EEED /* Entradas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Entradas.jpg; sourceTree = "<group>"; };
+		AB0746591A94F24A00B0EEED /* Especialidades.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Especialidades.jpg; sourceTree = "<group>"; };
+		AB07465A1A94F24A00B0EEED /* Introduccion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Introduccion.jpg; sourceTree = "<group>"; };
+		AB07465B1A94F24A00B0EEED /* Margaritas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Margaritas.jpg; sourceTree = "<group>"; };
+		AB07465C1A94F24A00B0EEED /* Martinis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Martinis.jpg; sourceTree = "<group>"; };
+		AB07465D1A94F24A00B0EEED /* Menu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Menu.jpg; sourceTree = "<group>"; };
+		AB07465E1A94F24A00B0EEED /* Mojitos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mojitos.jpg; sourceTree = "<group>"; };
+		AB07465F1A94F24A00B0EEED /* Pastas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pastas.jpg; sourceTree = "<group>"; };
+		AB0746601A94F24A00B0EEED /* Pizza_masatradicional.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pizza_masatradicional.jpg; sourceTree = "<group>"; };
+		AB0746611A94F24A00B0EEED /* Pizza_thincrust.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pizza_thincrust.jpg; sourceTree = "<group>"; };
+		AB0746621A94F24A00B0EEED /* Pizzas_Menu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pizzas_Menu.jpg; sourceTree = "<group>"; };
+		AB0746631A94F24A00B0EEED /* Refrescos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Refrescos.jpg; sourceTree = "<group>"; };
+		AB0746641A94F24A00B0EEED /* Sandwiches.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sandwiches.jpg; sourceTree = "<group>"; };
+		AB0746651A94F24A00B0EEED /* Sangrias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sangrias.jpg; sourceTree = "<group>"; };
+		AB0746661A94F24A00B0EEED /* Selecciones_ligeras.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Selecciones_ligeras.jpg; sourceTree = "<group>"; };
+		AB0746671A94F24A00B0EEED /* SinAlcohol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SinAlcohol.jpg; sourceTree = "<group>"; };
+		AB0746681A94F24A00B0EEED /* Sopas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sopas.jpg; sourceTree = "<group>"; };
+		AB0746691A94F24A00B0EEED /* Splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Splash.jpg; sourceTree = "<group>"; };
+		AB07466A1A94F24A00B0EEED /* Vinos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vinos.jpg; sourceTree = "<group>"; };
+		AB07466C1A94F24A00B0EEED /* fondo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo.jpg; sourceTree = "<group>"; };
+		AB07466D1A94F24A00B0EEED /* gesto_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesto_icon.png; sourceTree = "<group>"; };
+		AB07466E1A94F24A00B0EEED /* tagline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tagline.png; sourceTree = "<group>"; };
+		AB3CF5BB1A9562C700E28D10 /* Menu_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu_VC.swift; sourceTree = "<group>"; };
+		ABDA35171A951F27008F1289 /* Intro_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intro_VC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB0745F51A94E97000B0EEED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB07460A1A94E97000B0EEED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB0745EF1A94E97000B0EEED = {
+			isa = PBXGroup;
+			children = (
+				AB0745FA1A94E97000B0EEED /* CPK_Prueba2 */,
+				AB0746101A94E97000B0EEED /* CPK_Prueba2Tests */,
+				AB0745F91A94E97000B0EEED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB0745F91A94E97000B0EEED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB0745F81A94E97000B0EEED /* CPK_Prueba2.app */,
+				AB07460D1A94E97000B0EEED /* CPK_Prueba2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB0745FA1A94E97000B0EEED /* CPK_Prueba2 */ = {
+			isa = PBXGroup;
+			children = (
+				AB07461D1A94F24A00B0EEED /* ENTRADAS */,
+				AB07461F1A94F24A00B0EEED /* FOTOS SECCIONES */,
+				AB0746331A94F24A00B0EEED /* FOTOS SUBMENUS */,
+				AB0746401A94F24A00B0EEED /* GENERALES */,
+				AB0746481A94F24A00B0EEED /* INTRODUCCION */,
+				AB07464C1A94F24A00B0EEED /* MENU */,
+				AB07464E1A94F24A00B0EEED /* PIZZA */,
+				AB0746501A94F24A00B0EEED /* SCREENSHOTS */,
+				AB07466B1A94F24A00B0EEED /* SPLASH */,
+				AB0745FD1A94E97000B0EEED /* AppDelegate.swift */,
+				ABDA35171A951F27008F1289 /* Intro_VC.swift */,
+				AB0745FF1A94E97000B0EEED /* ViewController.swift */,
+				AB0746011A94E97000B0EEED /* Main.storyboard */,
+				AB3CF5BB1A9562C700E28D10 /* Menu_VC.swift */,
+				AB0746041A94E97000B0EEED /* Images.xcassets */,
+				AB0746061A94E97000B0EEED /* LaunchScreen.xib */,
+				AB0745FB1A94E97000B0EEED /* Supporting Files */,
+			);
+			path = CPK_Prueba2;
+			sourceTree = "<group>";
+		};
+		AB0745FB1A94E97000B0EEED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB0745FC1A94E97000B0EEED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB0746101A94E97000B0EEED /* CPK_Prueba2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AB0746131A94E97000B0EEED /* CPK_Prueba2Tests.swift */,
+				AB0746111A94E97000B0EEED /* Supporting Files */,
+			);
+			path = CPK_Prueba2Tests;
+			sourceTree = "<group>";
+		};
+		AB0746111A94E97000B0EEED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB0746121A94E97000B0EEED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB07461D1A94F24A00B0EEED /* ENTRADAS */ = {
+			isa = PBXGroup;
+			children = (
+				AB07461E1A94F24A00B0EEED /* wrap_bullet.png */,
+			);
+			path = ENTRADAS;
+			sourceTree = "<group>";
+		};
+		AB07461F1A94F24A00B0EEED /* FOTOS SECCIONES */ = {
+			isa = PBXGroup;
+			children = (
+				AB0746201A94F24A00B0EEED /* cerveza_foto.jpg */,
+				AB0746211A94F24A00B0EEED /* coctelalcohol_foto.jpg */,
+				AB0746221A94F24A00B0EEED /* coctelsnalcohol_foto.jpg */,
+				AB0746231A94F24A00B0EEED /* ensaladas_foto.jpg */,
+				AB0746241A94F24A00B0EEED /* entradas_foto.jpg */,
+				AB0746251A94F24A00B0EEED /* especialidades_foto.jpg */,
+				AB0746261A94F24A00B0EEED /* margarita_foto.jpg */,
+				AB0746271A94F24A00B0EEED /* martinis_foto.jpg */,
+				AB0746281A94F24A00B0EEED /* mojitos_foto.jpg */,
+				AB0746291A94F24A00B0EEED /* pastas_foto.jpg */,
+				AB07462A1A94F24A00B0EEED /* pizzasthin_foto.jpg */,
+				AB07462B1A94F24A00B0EEED /* pizzastrad_foto.jpg */,
+				AB07462C1A94F24A00B0EEED /* refrescos_foto.jpg */,
+				AB07462D1A94F24A00B0EEED /* sandwiches_foto.jpg */,
+				AB07462E1A94F24A00B0EEED /* sangrias_foto.jpg */,
+				AB07462F1A94F24A00B0EEED /* seleccionligera_foto.jpg */,
+				AB0746301A94F24A00B0EEED /* sinalcohol_foto.jpg */,
+				AB0746311A94F24A00B0EEED /* sopas_foto.jpg */,
+				AB0746321A94F24A00B0EEED /* vinos_foto.jpg */,
+			);
+			path = "FOTOS SECCIONES";
+			sourceTree = "<group>";
+		};
+		AB0746331A94F24A00B0EEED /* FOTOS SUBMENUS */ = {
+			isa = PBXGroup;
+			children = (
+				AB0746341A94F24A00B0EEED /* cerveza_foto.jpg */,
+				AB0746351A94F24A00B0EEED /* coctelalcohol_foto.jpg */,
+				AB0746361A94F24A00B0EEED /* coctelsnalcohol_foto.jpg */,
+				AB0746371A94F24A00B0EEED /* margarita_foto.jpg */,
+				AB0746381A94F24A00B0EEED /* martinis_foto.jpg */,
+				AB0746391A94F24A00B0EEED /* mojitos_foto.jpg */,
+				AB07463A1A94F24A00B0EEED /* pizzathin_foto.jpg */,
+				AB07463B1A94F24A00B0EEED /* pizzatrad_foto.jpg */,
+				AB07463C1A94F24A00B0EEED /* refrescos_foto.jpg */,
+				AB07463D1A94F24A00B0EEED /* sangrias_foto.jpg */,
+				AB07463E1A94F24A00B0EEED /* sinalcohol_foto.jpg */,
+				AB07463F1A94F24A00B0EEED /* vinos_foto.jpg */,
+			);
+			path = "FOTOS SUBMENUS";
+			sourceTree = "<group>";
+		};
+		AB0746401A94F24A00B0EEED /* GENERALES */ = {
+			isa = PBXGroup;
+			children = (
+				AB0746411A94F24A00B0EEED /* light_label.png */,
+				AB0746421A94F24A00B0EEED /* logo_cpk_horizontal.png */,
+				AB0746431A94F24A00B0EEED /* logo_cpk_vertical.png */,
+				AB0746441A94F24A00B0EEED /* menu_boton.png */,
+				AB0746451A94F24A00B0EEED /* platillofav_label.png */,
+				AB0746461A94F24A00B0EEED /* platillos_contenedor.png */,
+				AB0746471A94F24A00B0EEED /* productonuev_label.png */,
+			);
+			path = GENERALES;
+			sourceTree = "<group>";
+		};
+		AB0746481A94F24A00B0EEED /* INTRODUCCION */ = {
+			isa = PBXGroup;
+			children = (
+				AB0746491A94F24A00B0EEED /* flecha_siguiente.png */,
+				AB07464A1A94F24A00B0EEED /* fondo_intro.jpg */,
+				AB07464B1A94F24A00B0EEED /* headline_intro.png */,
+			);
+			path = INTRODUCCION;
+			sourceTree = "<group>";
+		};
+		AB07464C1A94F24A00B0EEED /* MENU */ = {
+			isa = PBXGroup;
+			children = (
+				AB07464D1A94F24A00B0EEED /* flecha_siguiente_blanco.png */,
+			);
+			path = MENU;
+			sourceTree = "<group>";
+		};
+		AB07464E1A94F24A00B0EEED /* PIZZA */ = {
+			isa = PBXGroup;
+			children = (
+				AB07464F1A94F24A00B0EEED /* pizza_bullet.png */,
+			);
+			path = PIZZA;
+			sourceTree = "<group>";
+		};
+		AB0746501A94F24A00B0EEED /* SCREENSHOTS */ = {
+			isa = PBXGroup;
+			children = (
+				AB0746511A94F24A00B0EEED /* Bebidas_Menu.jpg */,
+				AB0746521A94F24A00B0EEED /* Cervezas.jpg */,
+				AB0746531A94F24A00B0EEED /* Cierre.jpg */,
+				AB0746541A94F24A00B0EEED /* Cocteles.jpg */,
+				AB0746551A94F24A00B0EEED /* Cocteles_Alcohol.jpg */,
+				AB0746561A94F24A00B0EEED /* Cocteles_SnAlcohol.jpg */,
+				AB0746571A94F24A00B0EEED /* Ensaladas.jpg */,
+				AB0746581A94F24A00B0EEED /* Entradas.jpg */,
+				AB0746591A94F24A00B0EEED /* Especialidades.jpg */,
+				AB07465A1A94F24A00B0EEED /* Introduccion.jpg */,
+				AB07465B1A94F24A00B0EEED /* Margaritas.jpg */,
+				AB07465C1A94F24A00B0EEED /* Martinis.jpg */,
+				AB07465D1A94F24A00B0EEED /* Menu.jpg */,
+				AB07465E1A94F24A00B0EEED /* Mojitos.jpg */,
+				AB07465F1A94F24A00B0EEED /* Pastas.jpg */,
+				AB0746601A94F24A00B0EEED /* Pizza_masatradicional.jpg */,
+				AB0746611A94F24A00B0EEED /* Pizza_thincrust.jpg */,
+				AB0746621A94F24A00B0EEED /* Pizzas_Menu.jpg */,
+				AB0746631A94F24A00B0EEED /* Refrescos.jpg */,
+				AB0746641A94F24A00B0EEED /* Sandwiches.jpg */,
+				AB0746651A94F24A00B0EEED /* Sangrias.jpg */,
+				AB0746661A94F24A00B0EEED /* Selecciones_ligeras.jpg */,
+				AB0746671A94F24A00B0EEED /* SinAlcohol.jpg */,
+				AB0746681A94F24A00B0EEED /* Sopas.jpg */,
+				AB0746691A94F24A00B0EEED /* Splash.jpg */,
+				AB07466A1A94F24A00B0EEED /* Vinos.jpg */,
+			);
+			path = SCREENSHOTS;
+			sourceTree = "<group>";
+		};
+		AB07466B1A94F24A00B0EEED /* SPLASH */ = {
+			isa = PBXGroup;
+			children = (
+				AB07466C1A94F24A00B0EEED /* fondo.jpg */,
+				AB07466D1A94F24A00B0EEED /* gesto_icon.png */,
+				AB07466E1A94F24A00B0EEED /* tagline.png */,
+			);
+			path = SPLASH;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB0745F71A94E97000B0EEED /* CPK_Prueba2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0746171A94E97000B0EEED /* Build configuration list for PBXNativeTarget "CPK_Prueba2" */;
+			buildPhases = (
+				AB0745F41A94E97000B0EEED /* Sources */,
+				AB0745F51A94E97000B0EEED /* Frameworks */,
+				AB0745F61A94E97000B0EEED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPK_Prueba2;
+			productName = CPK_Prueba2;
+			productReference = AB0745F81A94E97000B0EEED /* CPK_Prueba2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB07460C1A94E97000B0EEED /* CPK_Prueba2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB07461A1A94E97000B0EEED /* Build configuration list for PBXNativeTarget "CPK_Prueba2Tests" */;
+			buildPhases = (
+				AB0746091A94E97000B0EEED /* Sources */,
+				AB07460A1A94E97000B0EEED /* Frameworks */,
+				AB07460B1A94E97000B0EEED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB07460F1A94E97000B0EEED /* PBXTargetDependency */,
+			);
+			name = CPK_Prueba2Tests;
+			productName = CPK_Prueba2Tests;
+			productReference = AB07460D1A94E97000B0EEED /* CPK_Prueba2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB0745F01A94E97000B0EEED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Desarrollo RM";
+				TargetAttributes = {
+					AB0745F71A94E97000B0EEED = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					AB07460C1A94E97000B0EEED = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = AB0745F71A94E97000B0EEED;
+					};
+				};
+			};
+			buildConfigurationList = AB0745F31A94E97000B0EEED /* Build configuration list for PBXProject "CPK_Prueba2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB0745EF1A94E97000B0EEED;
+			productRefGroup = AB0745F91A94E97000B0EEED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB0745F71A94E97000B0EEED /* CPK_Prueba2 */,
+				AB07460C1A94E97000B0EEED /* CPK_Prueba2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB0745F61A94E97000B0EEED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0746811A94F24A00B0EEED /* sopas_foto.jpg in Resources */,
+				AB0746801A94F24A00B0EEED /* sinalcohol_foto.jpg in Resources */,
+				AB07469F1A94F24A00B0EEED /* Cocteles_Alcohol.jpg in Resources */,
+				AB0746701A94F24A00B0EEED /* cerveza_foto.jpg in Resources */,
+				AB0746861A94F24A00B0EEED /* margarita_foto.jpg in Resources */,
+				AB07468B1A94F24A00B0EEED /* refrescos_foto.jpg in Resources */,
+				AB0746B71A94F24A00B0EEED /* tagline.png in Resources */,
+				AB0746A21A94F24A00B0EEED /* Entradas.jpg in Resources */,
+				AB07468F1A94F24A00B0EEED /* light_label.png in Resources */,
+				AB0746741A94F24A00B0EEED /* entradas_foto.jpg in Resources */,
+				AB0746A31A94F24A00B0EEED /* Especialidades.jpg in Resources */,
+				AB0746A51A94F24A00B0EEED /* Margaritas.jpg in Resources */,
+				AB0746AF1A94F24A00B0EEED /* Sangrias.jpg in Resources */,
+				AB0746B31A94F24A00B0EEED /* Splash.jpg in Resources */,
+				AB07467D1A94F24A00B0EEED /* sandwiches_foto.jpg in Resources */,
+				AB0746921A94F24A00B0EEED /* menu_boton.png in Resources */,
+				AB0746961A94F24A00B0EEED /* flecha_siguiente.png in Resources */,
+				AB0746B11A94F24A00B0EEED /* SinAlcohol.jpg in Resources */,
+				AB07468D1A94F24A00B0EEED /* sinalcohol_foto.jpg in Resources */,
+				AB0746A11A94F24A00B0EEED /* Ensaladas.jpg in Resources */,
+				AB07467F1A94F24A00B0EEED /* seleccionligera_foto.jpg in Resources */,
+				AB0746771A94F24A00B0EEED /* martinis_foto.jpg in Resources */,
+				AB0746AD1A94F24A00B0EEED /* Refrescos.jpg in Resources */,
+				AB0746721A94F24A00B0EEED /* coctelsnalcohol_foto.jpg in Resources */,
+				AB0746AB1A94F24A00B0EEED /* Pizza_thincrust.jpg in Resources */,
+				AB0746B61A94F24A00B0EEED /* gesto_icon.png in Resources */,
+				AB07468A1A94F24A00B0EEED /* pizzatrad_foto.jpg in Resources */,
+				AB0746031A94E97000B0EEED /* Main.storyboard in Resources */,
+				AB07467E1A94F24A00B0EEED /* sangrias_foto.jpg in Resources */,
+				AB0746981A94F24A00B0EEED /* headline_intro.png in Resources */,
+				AB0746881A94F24A00B0EEED /* mojitos_foto.jpg in Resources */,
+				AB0746821A94F24A00B0EEED /* vinos_foto.jpg in Resources */,
+				AB0746911A94F24A00B0EEED /* logo_cpk_vertical.png in Resources */,
+				AB0746A81A94F24A00B0EEED /* Mojitos.jpg in Resources */,
+				AB07467B1A94F24A00B0EEED /* pizzastrad_foto.jpg in Resources */,
+				AB0746081A94E97000B0EEED /* LaunchScreen.xib in Resources */,
+				AB0746991A94F24A00B0EEED /* flecha_siguiente_blanco.png in Resources */,
+				AB0746901A94F24A00B0EEED /* logo_cpk_horizontal.png in Resources */,
+				AB0746851A94F24A00B0EEED /* coctelsnalcohol_foto.jpg in Resources */,
+				AB0746751A94F24A00B0EEED /* especialidades_foto.jpg in Resources */,
+				AB0746A71A94F24A00B0EEED /* Menu.jpg in Resources */,
+				AB0746B41A94F24A00B0EEED /* Vinos.jpg in Resources */,
+				AB0746AE1A94F24A00B0EEED /* Sandwiches.jpg in Resources */,
+				AB07468E1A94F24A00B0EEED /* vinos_foto.jpg in Resources */,
+				AB0746941A94F24A00B0EEED /* platillos_contenedor.png in Resources */,
+				AB0746951A94F24A00B0EEED /* productonuev_label.png in Resources */,
+				AB0746A61A94F24A00B0EEED /* Martinis.jpg in Resources */,
+				AB07469E1A94F24A00B0EEED /* Cocteles.jpg in Resources */,
+				AB0746B51A94F24A00B0EEED /* fondo.jpg in Resources */,
+				AB0746831A94F24A00B0EEED /* cerveza_foto.jpg in Resources */,
+				AB07469A1A94F24A00B0EEED /* pizza_bullet.png in Resources */,
+				AB0746791A94F24A00B0EEED /* pastas_foto.jpg in Resources */,
+				AB07468C1A94F24A00B0EEED /* sangrias_foto.jpg in Resources */,
+				AB07467A1A94F24A00B0EEED /* pizzasthin_foto.jpg in Resources */,
+				AB0746931A94F24A00B0EEED /* platillofav_label.png in Resources */,
+				AB0746731A94F24A00B0EEED /* ensaladas_foto.jpg in Resources */,
+				AB0746AC1A94F24A00B0EEED /* Pizzas_Menu.jpg in Resources */,
+				AB0746AA1A94F24A00B0EEED /* Pizza_masatradicional.jpg in Resources */,
+				AB0746051A94E97000B0EEED /* Images.xcassets in Resources */,
+				AB07467C1A94F24A00B0EEED /* refrescos_foto.jpg in Resources */,
+				AB0746781A94F24A00B0EEED /* mojitos_foto.jpg in Resources */,
+				AB0746711A94F24A00B0EEED /* coctelalcohol_foto.jpg in Resources */,
+				AB0746841A94F24A00B0EEED /* coctelalcohol_foto.jpg in Resources */,
+				AB07466F1A94F24A00B0EEED /* wrap_bullet.png in Resources */,
+				AB0746891A94F24A00B0EEED /* pizzathin_foto.jpg in Resources */,
+				AB07469C1A94F24A00B0EEED /* Cervezas.jpg in Resources */,
+				AB0746A01A94F24A00B0EEED /* Cocteles_SnAlcohol.jpg in Resources */,
+				AB0746B21A94F24A00B0EEED /* Sopas.jpg in Resources */,
+				AB0746871A94F24A00B0EEED /* martinis_foto.jpg in Resources */,
+				AB07469B1A94F24A00B0EEED /* Bebidas_Menu.jpg in Resources */,
+				AB07469D1A94F24A00B0EEED /* Cierre.jpg in Resources */,
+				AB0746A41A94F24A00B0EEED /* Introduccion.jpg in Resources */,
+				AB0746B01A94F24A00B0EEED /* Selecciones_ligeras.jpg in Resources */,
+				AB0746A91A94F24A00B0EEED /* Pastas.jpg in Resources */,
+				AB0746761A94F24A00B0EEED /* margarita_foto.jpg in Resources */,
+				AB0746971A94F24A00B0EEED /* fondo_intro.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB07460B1A94E97000B0EEED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB0745F41A94E97000B0EEED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDA35181A951F27008F1289 /* Intro_VC.swift in Sources */,
+				AB3CF5BC1A9562C700E28D10 /* Menu_VC.swift in Sources */,
+				AB0746001A94E97000B0EEED /* ViewController.swift in Sources */,
+				AB0745FE1A94E97000B0EEED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0746091A94E97000B0EEED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0746141A94E97000B0EEED /* CPK_Prueba2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB07460F1A94E97000B0EEED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB0745F71A94E97000B0EEED /* CPK_Prueba2 */;
+			targetProxy = AB07460E1A94E97000B0EEED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB0746011A94E97000B0EEED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB0746021A94E97000B0EEED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB0746061A94E97000B0EEED /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB0746071A94E97000B0EEED /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB0746151A94E97000B0EEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB0746161A94E97000B0EEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB0746181A94E97000B0EEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CPK_Prueba2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB0746191A94E97000B0EEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CPK_Prueba2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AB07461B1A94E97000B0EEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CPK_Prueba2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CPK_Prueba2.app/CPK_Prueba2";
+			};
+			name = Debug;
+		};
+		AB07461C1A94E97000B0EEED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CPK_Prueba2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CPK_Prueba2.app/CPK_Prueba2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB0745F31A94E97000B0EEED /* Build configuration list for PBXProject "CPK_Prueba2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0746151A94E97000B0EEED /* Debug */,
+				AB0746161A94E97000B0EEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0746171A94E97000B0EEED /* Build configuration list for PBXNativeTarget "CPK_Prueba2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0746181A94E97000B0EEED /* Debug */,
+				AB0746191A94E97000B0EEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB07461A1A94E97000B0EEED /* Build configuration list for PBXNativeTarget "CPK_Prueba2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB07461B1A94E97000B0EEED /* Debug */,
+				AB07461C1A94E97000B0EEED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB0745F01A94E97000B0EEED /* Project object */;
+}
