@@ -13,18 +13,23 @@ class Intro_VC: UIViewController {
     @IBOutlet weak var img_eatDiff: UIImageView!
     @IBOutlet weak var Img_Flecha: UIImageView!
     @IBOutlet weak var img_logo: UIImageView!
-    @IBOutlet weak var tagline: UIImageView!
+
     
     override func viewDidLoad() {
+        
+        //********************** cargamos las imagenes *****************
         ImageIntro.image = UIImage(named: "fondo_intro.jpg")
         img_eatDiff.image = UIImage(named: "headline_intro.png")
         Img_Flecha.image = UIImage(named: "flecha_siguiente.png")
         img_logo.image = UIImage(named: "logo_cpk_horizontal.png")
-        tagline.image = UIImage(named: "tagline.png")
+        //***************************************************************//
+        var gestoIzquierda = UISwipeGestureRecognizer(target:self,action:"SwipeHandler:")
+        gestoIzquierda.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(gestoIzquierda)
         
-        var gesto = UISwipeGestureRecognizer(target:self,action:"SwipeHandler:")
-        gesto.direction = UISwipeGestureRecognizerDirection.Left
-        self.view.addGestureRecognizer(gesto)
+        var gestoDerecha = UISwipeGestureRecognizer(target:self,action:"SwipeHandler:")
+        gestoDerecha.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(gestoDerecha)
         
         super.viewDidLoad()
     }
@@ -39,8 +44,14 @@ class Intro_VC: UIViewController {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Left:
                 self.performSegueWithIdentifier("segue_Splash", sender: self)
+            case UISwipeGestureRecognizerDirection.Right:
+                self.performSegueWithIdentifier("Segue_Menu", sender: self)
             default: break
             }
         }
+    }
+    
+    override func prefersStatusBarHidden() -> Bool { //ocultar barra de status
+        return true
     }
 }

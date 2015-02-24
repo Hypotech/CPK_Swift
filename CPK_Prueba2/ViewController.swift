@@ -40,6 +40,10 @@ class ViewController: UIViewController {
         
         self.performSegueWithIdentifier("segue_Intro", sender: self)
     }
+    
+    override func prefersStatusBarHidden() -> Bool { //ocultar barra de status
+        return true
+    }
 }
 
 
