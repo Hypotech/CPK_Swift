@@ -10,8 +10,9 @@ import Foundation
 
 class Menu {
 
-    var nombre = "Nombre"
-
+    var nombre: String
+//    var descrición:String
+    
     init(nombre:String){
         self.nombre = nombre
     }

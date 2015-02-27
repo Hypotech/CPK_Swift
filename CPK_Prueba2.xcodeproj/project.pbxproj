@@ -89,7 +89,14 @@
 		AB242EBA1A9BB5EF00C4D2D5 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB242EB91A9BB5EF00C4D2D5 /* CustomTableCell.swift */; };
 		AB242EBE1A9BFA7D00C4D2D5 /* Entradas_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB242EBD1A9BFA7D00C4D2D5 /* Entradas_VC.swift */; };
 		AB3CF5BC1A9562C700E28D10 /* Menu_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CF5BB1A9562C700E28D10 /* Menu_VC.swift */; };
+		AB51F5A31A9D130F00F7FA9A /* MenusCPK.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51F5A21A9D130F00F7FA9A /* MenusCPK.swift */; };
 		ABDA35181A951F27008F1289 /* Intro_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDA35171A951F27008F1289 /* Intro_VC.swift */; };
+		ABEE22351A9FD4E60015F640 /* AlrightSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABEE222F1A9FD4E60015F640 /* AlrightSans-Bold.otf */; };
+		ABEE22361A9FD4E60015F640 /* AlrightSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABEE22301A9FD4E60015F640 /* AlrightSans-Regular.otf */; };
+		ABEE22371A9FD4E60015F640 /* AlrightSans-Thin 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABEE22311A9FD4E60015F640 /* AlrightSans-Thin 2.otf */; };
+		ABEE22381A9FD4E60015F640 /* AlrightSans-ThinItalic-v3.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABEE22321A9FD4E60015F640 /* AlrightSans-ThinItalic-v3.otf */; };
+		ABEE22391A9FD4E60015F640 /* Archer-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABEE22331A9FD4E60015F640 /* Archer-Bold.otf */; };
+		ABEE223A1A9FD4E60015F640 /* HandOfSean.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABEE22341A9FD4E60015F640 /* HandOfSean.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,7 +196,14 @@
 		AB242EB91A9BB5EF00C4D2D5 /* CustomTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
 		AB242EBD1A9BFA7D00C4D2D5 /* Entradas_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entradas_VC.swift; sourceTree = "<group>"; };
 		AB3CF5BB1A9562C700E28D10 /* Menu_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu_VC.swift; sourceTree = "<group>"; };
+		AB51F5A21A9D130F00F7FA9A /* MenusCPK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenusCPK.swift; sourceTree = "<group>"; };
 		ABDA35171A951F27008F1289 /* Intro_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intro_VC.swift; sourceTree = "<group>"; };
+		ABEE222F1A9FD4E60015F640 /* AlrightSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlrightSans-Bold.otf"; sourceTree = "<group>"; };
+		ABEE22301A9FD4E60015F640 /* AlrightSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlrightSans-Regular.otf"; sourceTree = "<group>"; };
+		ABEE22311A9FD4E60015F640 /* AlrightSans-Thin 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlrightSans-Thin 2.otf"; sourceTree = "<group>"; };
+		ABEE22321A9FD4E60015F640 /* AlrightSans-ThinItalic-v3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlrightSans-ThinItalic-v3.otf"; sourceTree = "<group>"; };
+		ABEE22331A9FD4E60015F640 /* Archer-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archer-Bold.otf"; sourceTree = "<group>"; };
+		ABEE22341A9FD4E60015F640 /* HandOfSean.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HandOfSean.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +245,7 @@
 		AB0745FA1A94E97000B0EEED /* CPK_Prueba2 */ = {
 			isa = PBXGroup;
 			children = (
+				ABEE222D1A9FD4E60015F640 /* Tipografías */,
 				AB242EB81A9B96FA00C4D2D5 /* Imagenes */,
 				AB0745FD1A94E97000B0EEED /* AppDelegate.swift */,
 				ABDA35171A951F27008F1289 /* Intro_VC.swift */,
@@ -242,6 +257,7 @@
 				AB0745FB1A94E97000B0EEED /* Supporting Files */,
 				AB242EB91A9BB5EF00C4D2D5 /* CustomTableCell.swift */,
 				AB242EBD1A9BFA7D00C4D2D5 /* Entradas_VC.swift */,
+				AB51F5A21A9D130F00F7FA9A /* MenusCPK.swift */,
 			);
 			path = CPK_Prueba2;
 			sourceTree = "<group>";
@@ -423,6 +439,27 @@
 			name = Imagenes;
 			sourceTree = "<group>";
 		};
+		ABEE222D1A9FD4E60015F640 /* Tipografías */ = {
+			isa = PBXGroup;
+			children = (
+				ABEE222E1A9FD4E60015F640 /* Alright Sans */,
+				ABEE22331A9FD4E60015F640 /* Archer-Bold.otf */,
+				ABEE22341A9FD4E60015F640 /* HandOfSean.otf */,
+			);
+			path = "Tipografías";
+			sourceTree = "<group>";
+		};
+		ABEE222E1A9FD4E60015F640 /* Alright Sans */ = {
+			isa = PBXGroup;
+			children = (
+				ABEE222F1A9FD4E60015F640 /* AlrightSans-Bold.otf */,
+				ABEE22301A9FD4E60015F640 /* AlrightSans-Regular.otf */,
+				ABEE22311A9FD4E60015F640 /* AlrightSans-Thin 2.otf */,
+				ABEE22321A9FD4E60015F640 /* AlrightSans-ThinItalic-v3.otf */,
+			);
+			path = "Alright Sans";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -503,11 +540,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABEE22381A9FD4E60015F640 /* AlrightSans-ThinItalic-v3.otf in Resources */,
 				AB0746811A94F24A00B0EEED /* sopas_foto.jpg in Resources */,
 				AB0746801A94F24A00B0EEED /* sinalcohol_foto.jpg in Resources */,
 				AB07469F1A94F24A00B0EEED /* Cocteles_Alcohol.jpg in Resources */,
 				AB0746701A94F24A00B0EEED /* cerveza_foto.jpg in Resources */,
 				AB0746861A94F24A00B0EEED /* margarita_foto.jpg in Resources */,
+				ABEE22361A9FD4E60015F640 /* AlrightSans-Regular.otf in Resources */,
+				ABEE22391A9FD4E60015F640 /* Archer-Bold.otf in Resources */,
 				AB07468B1A94F24A00B0EEED /* refrescos_foto.jpg in Resources */,
 				AB0746B71A94F24A00B0EEED /* tagline.png in Resources */,
 				AB0746A21A94F24A00B0EEED /* Entradas.jpg in Resources */,
@@ -526,6 +566,7 @@
 				AB07467F1A94F24A00B0EEED /* seleccionligera_foto.jpg in Resources */,
 				AB0746771A94F24A00B0EEED /* martinis_foto.jpg in Resources */,
 				AB0746AD1A94F24A00B0EEED /* Refrescos.jpg in Resources */,
+				ABEE22371A9FD4E60015F640 /* AlrightSans-Thin 2.otf in Resources */,
 				AB0746721A94F24A00B0EEED /* coctelsnalcohol_foto.jpg in Resources */,
 				AB0746AB1A94F24A00B0EEED /* Pizza_thincrust.jpg in Resources */,
 				AB0746B61A94F24A00B0EEED /* gesto_icon.png in Resources */,
@@ -538,6 +579,7 @@
 				AB0746911A94F24A00B0EEED /* logo_cpk_vertical.png in Resources */,
 				AB0746A81A94F24A00B0EEED /* Mojitos.jpg in Resources */,
 				AB07467B1A94F24A00B0EEED /* pizzastrad_foto.jpg in Resources */,
+				ABEE22351A9FD4E60015F640 /* AlrightSans-Bold.otf in Resources */,
 				AB0746081A94E97000B0EEED /* LaunchScreen.xib in Resources */,
 				AB0746991A94F24A00B0EEED /* flecha_siguiente_blanco.png in Resources */,
 				AB0746901A94F24A00B0EEED /* logo_cpk_horizontal.png in Resources */,
@@ -568,6 +610,7 @@
 				AB0746841A94F24A00B0EEED /* coctelalcohol_foto.jpg in Resources */,
 				AB07466F1A94F24A00B0EEED /* wrap_bullet.png in Resources */,
 				AB0746891A94F24A00B0EEED /* pizzathin_foto.jpg in Resources */,
+				ABEE223A1A9FD4E60015F640 /* HandOfSean.otf in Resources */,
 				AB07469C1A94F24A00B0EEED /* Cervezas.jpg in Resources */,
 				AB0746A01A94F24A00B0EEED /* Cocteles_SnAlcohol.jpg in Resources */,
 				AB0746B21A94F24A00B0EEED /* Sopas.jpg in Resources */,
@@ -601,6 +644,7 @@
 				AB242EBA1A9BB5EF00C4D2D5 /* CustomTableCell.swift in Sources */,
 				AB3CF5BC1A9562C700E28D10 /* Menu_VC.swift in Sources */,
 				AB0746001A94E97000B0EEED /* ViewController.swift in Sources */,
+				AB51F5A31A9D130F00F7FA9A /* MenusCPK.swift in Sources */,
 				AB0745FE1A94E97000B0EEED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

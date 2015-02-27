@@ -9,11 +9,22 @@
 import UIKit
 
 
-class Entradas_VC:UIViewController{
+class Entradas_VC:MenusCPK{
 
+    var platillos: [Menu] = [Menu(nombre:"Entradas"),Menu(nombre:"Ensaladas"),Menu(nombre:"Sopas"),Menu(nombre:"Sandwiches"),Menu(nombre:"Pastas"),Menu(nombre:"Pizzas"),Menu(nombre:"Selecciones ligeras"),Menu(nombre:"Especialidades"),Menu(nombre:"Bebidas")]
+    
+    var Myfondo: UIImage = UIImage(named: "entradas_foto.jpg")!
+    var PathEntrada = "Menú – <font color=\"#FEAC0D\">Sopas</font>"
+    var nombreFondo = "WRAPS DE LECHUGA CON POLLO A LA NARANJA"
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        ////// inicializando variables ///////
+        super.menusPlatillos = platillos
+        super.platoFondo = Myfondo
+        super.Ruta = PathEntrada
+        super.NombreFondo = nombreFondo
+        ////////////////////////////////////
         var gestoIzquierda = UISwipeGestureRecognizer(target: self, action: "gestoManejador:") //notar los dos puntos al final de gestoManejador
         gestoIzquierda.direction = UISwipeGestureRecognizerDirection.Left
         
@@ -22,7 +33,7 @@ class Entradas_VC:UIViewController{
         
         self.view.addGestureRecognizer(gestoIzquierda)
         self.view.addGestureRecognizer(gestoDerecha)
-        
+        super.viewDidLoad()
     }
     
     override func didReceiveMemoryWarning () {
@@ -35,8 +46,8 @@ class Entradas_VC:UIViewController{
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Left:
                 self.performSegueWithIdentifier("Segue_Menu_Return", sender: self)
-            case UISwipeGestureRecognizerDirection.Right:
-                self.performSegueWithIdentifier("Segue_Menu_Return", sender: self)
+//            case UISwipeGestureRecognizerDirection.Right:
+//                self.performSegueWithIdentifier("Segue_Menu_Return", sender: self)
             default: break
             }
         }
