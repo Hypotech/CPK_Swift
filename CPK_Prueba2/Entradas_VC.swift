@@ -11,19 +11,25 @@ import UIKit
 
 class Entradas_VC:MenusCPK{
 
-    var platillos: [Menu] = [Menu(nombre:"Entradas"),Menu(nombre:"Ensaladas"),Menu(nombre:"Sopas"),Menu(nombre:"Sandwiches"),Menu(nombre:"Pastas"),Menu(nombre:"Pizzas"),Menu(nombre:"Selecciones ligeras"),Menu(nombre:"Especialidades"),Menu(nombre:"Bebidas")]
+    var nombresPlatillos: [CustomCell] = [
+        CustomCellTipo4(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell")
+    ]
     
     var Myfondo: UIImage = UIImage(named: "entradas_foto.jpg")!
-    var PathEntrada = "Menú – <font color=\"#FEAC0D\">Sopas</font>"
-    var nombreFondo = "WRAPS DE LECHUGA CON POLLO A LA NARANJA"
     
     override func viewDidLoad() {
         
         ////// inicializando variables ///////
-        super.menusPlatillos = platillos
+        super.menusPlatillos = nombresPlatillos
         super.platoFondo = Myfondo
-        super.Ruta = PathEntrada
-        super.NombreFondo = nombreFondo
+//        super.Ruta = PathEntrada
+//        super.NombreFondo = nombreFondo
         ////////////////////////////////////
         var gestoIzquierda = UISwipeGestureRecognizer(target: self, action: "gestoManejador:") //notar los dos puntos al final de gestoManejador
         gestoIzquierda.direction = UISwipeGestureRecognizerDirection.Left
@@ -33,6 +39,15 @@ class Entradas_VC:MenusCPK{
         
         self.view.addGestureRecognizer(gestoIzquierda)
         self.view.addGestureRecognizer(gestoDerecha)
+//        
+//        var cabeceras:[String] = ["title","breadcrumb"]
+//        var camposMenus:[String] = ["title","price", "badge","extratext","description","text"]
+//        
+//        var test = JSONParser(ArchivoRuta: "entrada")
+//        
+//        test.GetHeader(cabeceras)
+//        test.GetSpecificMenu(camposMenus, menuNumero: 0)
+        
         super.viewDidLoad()
     }
     

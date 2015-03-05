@@ -13,7 +13,7 @@ class Menu_VC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var Im_logoCPK: UIImageView!
     @IBOutlet weak var tbale: UITableView!
     
-    var arrayMenus: [Menu] = [Menu] ()
+    var arrayMenus: [String] = [String] ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,11 +58,12 @@ class Menu_VC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let animCell = tableView.dequeueReusableCellWithIdentifier("CustomCell") as UITableViewCell
-        animCell.textLabel.text = arrayMenus[indexPath.row].nombre
-        
+        animCell.textLabel.text = arrayMenus[indexPath.row]
+
         //--------------------------------  personalizacion de la celda  --------------------------------------
-        var imgTm = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 15))
-        imgTm.image = UIImage(named: "flecha_siguiente_blanco.png")
+        var imgTm = UIImageView(frame:CGRect(x: 0, y: 0, width: 40, height: 15))
+        
+        imgTm.image = UIImage(named: "flecha_siguiente_blanco.png") //imagen para el accesoryView
         animCell.accessoryView = imgTm
         
         animCell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
@@ -87,18 +88,11 @@ class Menu_VC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     }
     
     func initMenus(){
-        var tmpMenus:NSArray = [Menu(nombre:"Entradas"),Menu(nombre:"Ensaladas"),Menu(nombre:"Sopas"),Menu(nombre:"Sandwiches"),Menu(nombre:"Pastas"),Menu(nombre:"Pizzas"),Menu(nombre:"Selecciones ligeras"),Menu(nombre:"Especialidades"),Menu(nombre:"Bebidas")]
-//        var Menu1 = Menu(nombre: "Entradas")
-//        var Menu2 = Menu(nombre: "Ensaladas")
-//        var Menu3 = Menu(nombre: "Sopas")
-//        var Menu4 = Menu(nombre: "Sandwiches")
-//        var Menu5 = Menu(nombre: "Pastas")
-//        var Menu6 = Menu(nombre: "Pizzas")
-//        var Menu7 = Menu(nombre: "Selecciones ligeras")
-//        var Menu8 = Menu(nombre: "Especialidades")
-//        var Menu9 = Menu(nombre: "Bebidas")
+//        var tmpMenus:NSArray = [Menu(nombre:"Entradas"),Menu(nombre:"Ensaladas"),Menu(nombre:"Sopas"),Menu(nombre:"Sandwiches"),Menu(nombre:"Pastas"),Menu(nombre:"Pizzas"),Menu(nombre:"Selecciones ligeras"),Menu(nombre:"Especialidades"),Menu(nombre:"Bebidas")]
+        var tmpMenus:[String] = ["Entradas","Ensaladas","Sopas","Sandwiches","Pastas","Pizzas","Selecciones ligeras","Especialidades","Bebidas"]
+        
         for i in tmpMenus{
-            arrayMenus.append(i as Menu)
+            arrayMenus.append(i)
         }
 
     }

@@ -13,7 +13,6 @@ class Intro_VC: UIViewController {
     @IBOutlet weak var img_eatDiff: UIImageView!
     @IBOutlet weak var Img_Flecha: UIImageView!
     @IBOutlet weak var img_logo: UIImageView!
-
     
     override func viewDidLoad() {
         

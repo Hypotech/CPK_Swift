@@ -10,30 +10,35 @@ import UIkit
 
 class MenusCPK:UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    @IBOutlet weak var tablaMenus: UITableView!
-    private var menusArray: [Menu] = [] //inicializador inline
-    private var ImgPlato: UIImage = UIImage() //inicializador inline
-    @IBOutlet weak var Btn_Menu: UIButton!
-    @IBOutlet weak var Lbl_Path: UILabel!
-    @IBOutlet weak var img_fondoMenu: UIImageView!
-    @IBOutlet weak var img_logoVertical: UIImageView!
-    @IBOutlet weak var Lbl_NombreFondo: UILabel!
+    @IBOutlet weak var tablaMenus: UITableView! //tabla donde se deplegaran los Menus/Platillos
+    private var Platillos: [CustomCell] = [] //Lista de nombres de los platillos
+    private var imgFondo: UIImage = UIImage() //Plato representativo del Menu
+    @IBOutlet weak var Btn_Menu: UIButton! //Boton de regreso al menu principal
+    @IBOutlet weak var Lbl_Path: UILabel! //Ruta actual
+    @IBOutlet weak var img_fondoMenu: UIImageView! //donde se despliega la imgFondo
+    @IBOutlet weak var img_logoVertical: UIImageView! //logo de la compañia
+    @IBOutlet weak var Lbl_NombreFondo: UILabel! //etiqueta para img_fondoMenu
     
-    var menusPlatillos:[Menu]{ //getter y setter para Celdas
+    //.............................. casos especiales ..............................//
+//    var conMensajeIntro:Bool = false
+//    var lbl_introTexto:UILabel! //mensaje Introductorio
+//    var view_imgIntroMenu: UIImageView!//imagen que hace alusión al mensaje intro
+    //..............................................................................//
+    var menusPlatillos:[CustomCell]{ //getter y setter para Celdas
         get{
-            return menusArray
+            return Platillos
         }
         set{
-        menusArray = newValue
+        Platillos = newValue
         }
     }
     
     var platoFondo: UIImage{ //getter y setter para ImgPlato
         get{
-            return ImgPlato
+            return imgFondo
         }
         set{
-            ImgPlato = newValue
+            imgFondo = newValue
         }
     }
     var NombreFondo:String{
@@ -64,12 +69,22 @@ class MenusCPK:UIViewController, UITableViewDataSource, UITableViewDelegate{
         super.viewDidLoad()
         tablaMenus.delegate = self
         tablaMenus.dataSource = self
+//        tablaMenus.rowHeight = UITableViewAutomaticDimension
         tablaMenus.separatorStyle = .None // sin separadaores
         
         Btn_Menu.setBackgroundImage(UIImage(named: "menu_boton.png"), forState: UIControlState.Normal)
-        img_fondoMenu.image = ImgPlato
+        img_fondoMenu.image = imgFondo
         img_logoVertical.image = UIImage(named: "logo_cpk_horizontal.png")
 //        Lbl_Path.font = UIFont(name: "Archer-Bold", size: 14.0) // <---- checar esto (no funciona)
+        
+//        if (conMensajeIntro){
+//            lbl_introTexto.frame = CGRect(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)
+//            
+//            let TAMAÑO_TEXT:CGFloat = 72.0
+//            view_imgIntroMenu.frame = CGRect(x: tablaMenus.frame.minX, y: tablaMenus.frame.minY, width: 90.0, height: 40.0)
+//            
+//            tablaMenus.frame = CGRect(x: tablaMenus.frame.minX , y: tablaMenus.frame.minY + TAMAÑO_TEXT+8, width: tablaMenus.frame.width, height: tablaMenus.frame.height - (TAMAÑO_TEXT+8) ) // reubica la tabla
+//        }
     }
 
     override func prefersStatusBarHidden() -> Bool { //ocultar barra de status
@@ -82,28 +97,37 @@ class MenusCPK:UIViewController, UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 9
+        return Platillos.count
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 80.0
+        return Platillos[indexPath.row].altoRow
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let CustCell = tableView.dequeueReusableCellWithIdentifier("CustomCell") as UITableViewCell
-        CustCell.textLabel.text = menusArray[indexPath.row].nombre
+//        var celda = tableView.dequeueReusableCellWithIdentifier("MyCustomCell") as? CustomCell
+//        
+//        if celda == nil {
+//            celda = CustomCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell")
+//        }
         
         //--------------------------------  personalizacion de la celda  --------------------------------------
-        var imgTm = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 15))
-        imgTm.image = UIImage(named: "flecha_siguiente_blanco.png")
-        CustCell.accessoryView = imgTm
+
+        Platillos[indexPath.row].backgroundColor = UIColor.whiteColor()
+//        celda!.lbl_nombreMenu.text = "Menu \(indexPath.row) blablabla"
+//        celda!.lbl_descripcion.text = "Descripcion \(indexPath.row) blablablablablabla"
+//        celda!.lbl_precio.text = "$10\(indexPath.row)"
+//        celda!.lbl_ConcienciaSoc.text = "to specify the width and height of the label with constraints because the frame no longer is used. Finally, you also should set the textAlignment to .Center so that your text is centered in your label."
+//        celda!.imgV_ConcienciaSocial.image = UIImage(named: "wrap_bullet.png")
+//        celda!.imgV_Insignia.image = UIImage(named: "platillofav_label.png")
         
-        CustCell.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
-        CustCell.textLabel.textColor = UIColor(red: 252, green: 217, blue: 0, alpha: 1) //amarillo personalizado
-        CustCell.textLabel.font = UIFont(name: CustCell.textLabel.font.fontName, size: 22)
+        Platillos[indexPath.row].rellenarConJSONs("entrada",menuNum: indexPath.row) //Autorellena con el JSON especificado
+        
+        Platillos[indexPath.row].setNeedsUpdateConstraints()
+        Platillos[indexPath.row].updateConstraintsIfNeeded()
+        
         //  ---------------------------------------------------------------------------------------------------
-        return CustCell
+        return Platillos[indexPath.row]
     }
     //#############################################################################################################
     
