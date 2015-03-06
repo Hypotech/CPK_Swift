@@ -41,7 +41,7 @@ class CustomCellTipo4: CustomCellTipo3 {
         
         lbl_ConcienciaSoc.frame = CGRect(x: lbl_descripcion.frame.minX+W_imgConcSoci+8, y: lbl_descripcion.frame.maxY + 4, width: 322, height: 55)
         imgV_ConcienciaSocial.frame = CGRect(x: lbl_descripcion.frame.minX, y: lbl_ConcienciaSoc.frame.height/2-(H_imgConcSoci/2)+lbl_ConcienciaSoc.frame.minY, width: W_imgConcSoci, height: H_imgConcSoci)
-        
+altoRow = lbl_ConcienciaSoc.frame.maxY + 10.0
     }
 
 }

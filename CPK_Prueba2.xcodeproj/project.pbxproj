@@ -96,6 +96,9 @@
 		AB8BA9651AA686C2002DB4C6 /* entrada.js in Resources */ = {isa = PBXBuildFile; fileRef = AB8BA9641AA686C2002DB4C6 /* entrada.js */; };
 		AB9617C01AA8B23D00C252CE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9617BF1AA8B23D00C252CE /* CustomCell.swift */; };
 		ABB67C781AA62A7900854523 /* CustomCellTipo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB67C771AA62A7900854523 /* CustomCellTipo2.swift */; };
+		ABC520C91AA927B200B36489 /* ensalada.js in Resources */ = {isa = PBXBuildFile; fileRef = ABC520C71AA927B200B36489 /* ensalada.js */; };
+		ABC520CA1AA927B200B36489 /* sopa.js in Resources */ = {isa = PBXBuildFile; fileRef = ABC520C81AA927B200B36489 /* sopa.js */; };
+		ABC520CC1AA927DF00B36489 /* Ensaladas_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC520CB1AA927DF00B36489 /* Ensaladas_VC.swift */; };
 		ABDA35181A951F27008F1289 /* Intro_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDA35171A951F27008F1289 /* Intro_VC.swift */; };
 		ABEE22351A9FD4E60015F640 /* AlrightSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABEE222F1A9FD4E60015F640 /* AlrightSans-Bold.otf */; };
 		ABEE22361A9FD4E60015F640 /* AlrightSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABEE22301A9FD4E60015F640 /* AlrightSans-Regular.otf */; };
@@ -209,6 +212,9 @@
 		AB8BA9641AA686C2002DB4C6 /* entrada.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = entrada.js; sourceTree = "<group>"; };
 		AB9617BF1AA8B23D00C252CE /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		ABB67C771AA62A7900854523 /* CustomCellTipo2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellTipo2.swift; sourceTree = "<group>"; };
+		ABC520C71AA927B200B36489 /* ensalada.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ensalada.js; sourceTree = "<group>"; };
+		ABC520C81AA927B200B36489 /* sopa.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sopa.js; sourceTree = "<group>"; };
+		ABC520CB1AA927DF00B36489 /* Ensaladas_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ensaladas_VC.swift; sourceTree = "<group>"; };
 		ABDA35171A951F27008F1289 /* Intro_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intro_VC.swift; sourceTree = "<group>"; };
 		ABEE222F1A9FD4E60015F640 /* AlrightSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlrightSans-Bold.otf"; sourceTree = "<group>"; };
 		ABEE22301A9FD4E60015F640 /* AlrightSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlrightSans-Regular.otf"; sourceTree = "<group>"; };
@@ -267,8 +273,8 @@
 				AB3CF5BB1A9562C700E28D10 /* Menu_VC.swift */,
 				AB0746041A94E97000B0EEED /* Images.xcassets */,
 				AB0746061A94E97000B0EEED /* LaunchScreen.xib */,
+				ABC520CD1AA927EC00B36489 /* ViewsControllers */,
 				AB0745FB1A94E97000B0EEED /* Supporting Files */,
-				AB242EBD1A9BFA7D00C4D2D5 /* Entradas_VC.swift */,
 				AB51F5A21A9D130F00F7FA9A /* MenusCPK.swift */,
 				AB89FEE61AA65F5900BC1856 /* JSONParser.swift */,
 			);
@@ -456,6 +462,8 @@
 		AB8BA9631AA6868E002DB4C6 /* JSONs */ = {
 			isa = PBXGroup;
 			children = (
+				ABC520C71AA927B200B36489 /* ensalada.js */,
+				ABC520C81AA927B200B36489 /* sopa.js */,
 				AB8BA9641AA686C2002DB4C6 /* entrada.js */,
 			);
 			name = JSONs;
@@ -471,6 +479,15 @@
 				AB89FEE41AA632F500BC1856 /* CustomCellTipo4.swift */,
 			);
 			name = CeldasView;
+			sourceTree = "<group>";
+		};
+		ABC520CD1AA927EC00B36489 /* ViewsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB242EBD1A9BFA7D00C4D2D5 /* Entradas_VC.swift */,
+				ABC520CB1AA927DF00B36489 /* Ensaladas_VC.swift */,
+			);
+			name = ViewsControllers;
 			sourceTree = "<group>";
 		};
 		ABEE222D1A9FD4E60015F640 /* Tipografías */ = {
@@ -593,10 +610,12 @@
 				AB0746B31A94F24A00B0EEED /* Splash.jpg in Resources */,
 				AB07467D1A94F24A00B0EEED /* sandwiches_foto.jpg in Resources */,
 				AB0746921A94F24A00B0EEED /* menu_boton.png in Resources */,
+				ABC520CA1AA927B200B36489 /* sopa.js in Resources */,
 				AB0746961A94F24A00B0EEED /* flecha_siguiente.png in Resources */,
 				AB0746B11A94F24A00B0EEED /* SinAlcohol.jpg in Resources */,
 				AB07468D1A94F24A00B0EEED /* sinalcohol_foto.jpg in Resources */,
 				AB0746A11A94F24A00B0EEED /* Ensaladas.jpg in Resources */,
+				ABC520C91AA927B200B36489 /* ensalada.js in Resources */,
 				AB07467F1A94F24A00B0EEED /* seleccionligera_foto.jpg in Resources */,
 				AB0746771A94F24A00B0EEED /* martinis_foto.jpg in Resources */,
 				AB0746AD1A94F24A00B0EEED /* Refrescos.jpg in Resources */,
@@ -675,6 +694,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB242EBE1A9BFA7D00C4D2D5 /* Entradas_VC.swift in Sources */,
+				ABC520CC1AA927DF00B36489 /* Ensaladas_VC.swift in Sources */,
 				ABB67C781AA62A7900854523 /* CustomCellTipo2.swift in Sources */,
 				ABDA35181A951F27008F1289 /* Intro_VC.swift in Sources */,
 				AB89FEE71AA65F5900BC1856 /* JSONParser.swift in Sources */,

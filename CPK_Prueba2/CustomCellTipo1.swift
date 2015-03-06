@@ -42,10 +42,10 @@ class CustomCellTipo1:CustomCell {
         
         lbl_nombreMenu.backgroundColor = UIColor.brownColor()
         
-        lbl_precio.frame = CGRect(x: 463, y: 0, width: 55, height: 40)
+        lbl_precio.frame = CGRect(x: 472, y: 0, width: 55, height: 40)
         lbl_precio.textAlignment = .Right
         lbl_precio.backgroundColor = UIColor.blueColor()
-        lbl_precio.font = lbl_precio.font.fontWithSize(14.0)
+        lbl_precio.font = lbl_precio.font.fontWithSize(17.0)
         
 //        println(lbl_nombreMenu.font)
 //        println("\(lbl_precio.frame.minX)")
@@ -94,6 +94,7 @@ class CustomCellTipo1:CustomCell {
         lbl_nombreMenu.text = dtosCadena[0]
         lbl_precio.text = "$" + dtosCadena[1]
         self.CalculaAlto()
+        altoRow = lbl_nombreMenu.frame.maxY + 8
     }
     
     required init(coder aDecoder: NSCoder) {

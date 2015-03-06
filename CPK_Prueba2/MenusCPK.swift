@@ -18,6 +18,7 @@ class MenusCPK:UIViewController, UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var img_fondoMenu: UIImageView! //donde se despliega la imgFondo
     @IBOutlet weak var img_logoVertical: UIImageView! //logo de la compañia
     @IBOutlet weak var Lbl_NombreFondo: UILabel! //etiqueta para img_fondoMenu
+    @IBOutlet weak var lbl_nombreMenu: UILabel!
     
     //.............................. casos especiales ..............................//
 //    var conMensajeIntro:Bool = false
@@ -75,6 +76,12 @@ class MenusCPK:UIViewController, UITableViewDataSource, UITableViewDelegate{
         Btn_Menu.setBackgroundImage(UIImage(named: "menu_boton.png"), forState: UIControlState.Normal)
         img_fondoMenu.image = imgFondo
         img_logoVertical.image = UIImage(named: "logo_cpk_horizontal.png")
+        
+        var ArchivoJSON = JSONParser(ArchivoRuta: "entrada")
+        var Datos = ArchivoJSON.getHeader(["title","breadcrumb"])
+
+        lbl_nombreMenu.text = Datos[0]
+        Ruta = Datos[1]
 //        Lbl_Path.font = UIFont(name: "Archer-Bold", size: 14.0) // <---- checar esto (no funciona)
         
 //        if (conMensajeIntro){
@@ -113,14 +120,7 @@ class MenusCPK:UIViewController, UITableViewDataSource, UITableViewDelegate{
         
         //--------------------------------  personalizacion de la celda  --------------------------------------
 
-        Platillos[indexPath.row].backgroundColor = UIColor.whiteColor()
-//        celda!.lbl_nombreMenu.text = "Menu \(indexPath.row) blablabla"
-//        celda!.lbl_descripcion.text = "Descripcion \(indexPath.row) blablablablablabla"
-//        celda!.lbl_precio.text = "$10\(indexPath.row)"
-//        celda!.lbl_ConcienciaSoc.text = "to specify the width and height of the label with constraints because the frame no longer is used. Finally, you also should set the textAlignment to .Center so that your text is centered in your label."
-//        celda!.imgV_ConcienciaSocial.image = UIImage(named: "wrap_bullet.png")
-//        celda!.imgV_Insignia.image = UIImage(named: "platillofav_label.png")
-        
+        Platillos[indexPath.row].backgroundColor = UIColor(red: 252, green: 252, blue: 252, alpha: 1)
         Platillos[indexPath.row].rellenarConJSONs("entrada",menuNum: indexPath.row) //Autorellena con el JSON especificado
         
         Platillos[indexPath.row].setNeedsUpdateConstraints()

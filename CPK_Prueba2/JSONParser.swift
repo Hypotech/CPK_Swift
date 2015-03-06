@@ -37,7 +37,7 @@ class JSONParser {
         jsonDic = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary // creamos un NSDicticonary a partir del JSON
     }
     
-    func GetHeader(cabeceras:[String]) -> [String] {
+    func getHeader(cabeceras:[String]) -> [String] {
 
         var resultCabeceras:[String] = [] //mutable object
         
@@ -87,7 +87,7 @@ class JSONParser {
         var desAppend: String = String()
         
         for var i = 0; i < descricion.count; i++ {
-            desAppend += descricion[i].objectForKey("text") as String //concatenar
+            desAppend += descricion[i].objectForKey("text") as String  + "<br>"//concatenar
             //println(desAppend)
         }
         

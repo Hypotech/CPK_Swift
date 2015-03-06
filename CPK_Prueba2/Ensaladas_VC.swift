@@ -1,16 +1,14 @@
 //
-//  Entradas_VC.swift
+//  Ensaladas_VC.swift
 //  CPK_Prueba2
 //
-//  Created by desarm on 23/02/15.
+//  Created by desarm on 05/03/15.
 //  Copyright (c) 2015 Desarrollo RM. All rights reserved.
 //
 
 import UIKit
 
-
-class Entradas_VC:MenusCPK{
-
+class Ensaladas_VC: MenusCPK {
     var nombresPlatillos: [CustomCell] = [
         CustomCellTipo4(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
         CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
@@ -21,16 +19,15 @@ class Entradas_VC:MenusCPK{
         CustomCellTipo3(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
         CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell")
     ]
-    
-    var Myfondo: UIImage = UIImage(named: "entradas_foto.jpg")!
+    var Myfondo: UIImage = UIImage(named: "ensaladas_foto.jpg")!
     
     override func viewDidLoad() {
         
         ////// inicializando variables ///////
         super.menusPlatillos = nombresPlatillos
         super.platoFondo = Myfondo
-//        super.Ruta = PathEntrada
-//        super.NombreFondo = nombreFondo
+        //        super.Ruta = PathEntrada
+        //        super.NombreFondo = nombreFondo
         ////////////////////////////////////
         var gestoIzquierda = UISwipeGestureRecognizer(target: self, action: "gestoManejador:") //notar los dos puntos al final de gestoManejador
         gestoIzquierda.direction = UISwipeGestureRecognizerDirection.Left
@@ -40,14 +37,14 @@ class Entradas_VC:MenusCPK{
         
         self.view.addGestureRecognizer(gestoIzquierda)
         self.view.addGestureRecognizer(gestoDerecha)
-//        
-//        var cabeceras:[String] = ["title","breadcrumb"]
-//        var camposMenus:[String] = ["title","price", "badge","extratext","description","text"]
-//        
-//        var test = JSONParser(ArchivoRuta: "entrada")
-//        
-//        test.GetHeader(cabeceras)
-//        test.GetSpecificMenu(camposMenus, menuNumero: 0)
+        //
+        //        var cabeceras:[String] = ["title","breadcrumb"]
+        //        var camposMenus:[String] = ["title","price", "badge","extratext","description","text"]
+        //
+        //        var test = JSONParser(ArchivoRuta: "entrada")
+        //
+        //        test.GetHeader(cabeceras)
+        //        test.GetSpecificMenu(camposMenus, menuNumero: 0)
         
         super.viewDidLoad()
     }
@@ -61,11 +58,13 @@ class Entradas_VC:MenusCPK{
         if let swipeGesture = send as? UISwipeGestureRecognizer { //casting si es un GestureSwipe
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Left:
-                self.performSegueWithIdentifier("Segue_Menu_Return", sender: self)
-            case UISwipeGestureRecognizerDirection.Right:
-                self.performSegueWithIdentifier("Segue_Ensaladas", sender: self)
+                self.performSegueWithIdentifier("Segue_Entradas_Return", sender: self)
+                            case UISwipeGestureRecognizerDirection.Right:
+                                self.performSegueWithIdentifier("Segue_Menu_Return", sender: self)
             default: break
             }
         }
     }
+    
+    
 }

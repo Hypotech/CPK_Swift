@@ -31,7 +31,7 @@ class CustomCellTipo2:CustomCellTipo1 {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         //___________________________________ Personalizando lbl_descripcion  _______________________________________
-        lbl_descripcion.frame = CGRect(x: 0, y: lbl_nombreMenu.frame.height + 10, width: 380, height: 0)
+        lbl_descripcion.frame = CGRect(x: 0, y: lbl_nombreMenu.frame.height + 10, width: 382, height: 0)
         lbl_descripcion.numberOfLines = 0
         lbl_descripcion.lineBreakMode = .ByWordWrapping
         lbl_descripcion.backgroundColor = UIColor.yellowColor()
@@ -57,5 +57,6 @@ class CustomCellTipo2:CustomCellTipo1 {
         
         lbl_descripcion.font = lbl_descripcion.font.fontWithSize(17.0)
         self.CalculaAlto()
+        altoRow = lbl_descripcion.frame.maxY + 8.0
     }
 }

@@ -17,14 +17,11 @@ class CustomCellTipo3: CustomCellTipo2 {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        imgV_Insignia.frame = CGRect(x: lbl_nombreMenu.frame.width + 8, y: lbl_nombreMenu.frame.minY, width: 32, height: 34)
+        imgV_Insignia.frame = CGRect(x: lbl_nombreMenu.frame.width + 8, y: lbl_nombreMenu.frame.minY, width: 20, height: 20)
         lbl_TextoInsignia.frame = CGRect(x: imgV_Insignia.frame.maxX + 6,
             y: imgV_Insignia.frame.height/2 - 14/2,
             width: 125,
             height: 14)
-        lbl_TextoInsignia.textColor = UIColor(red: 254, green: 215, blue: 5, alpha: 1) //color Personalizado
-        
-//        lbl_TextoInsignia.backgroundColor = UIColor.greenColor()
         
         contentView.addSubview(imgV_Insignia)
         contentView.addSubview(lbl_TextoInsignia)
@@ -40,19 +37,24 @@ class CustomCellTipo3: CustomCellTipo2 {
         var ArchivoJSON = JSONParser(ArchivoRuta: archivo)
         var dtosCadena = ArchivoJSON.GetSpecificMenu(["badge"], menuNumero: menuNum)
 
+        println("badge: " + dtosCadena[0])
         
         switch (dtosCadena[0]){
         case "1":
             imgV_Insignia.image = UIImage(named:"platillofav_label.png")
             lbl_TextoInsignia.text = "Platillo Favorito"
+            lbl_TextoInsignia.textColor = UIColor(red: 252, green: 231, blue: 0, alpha: 1) //color Personalizado
         case "2":
             imgV_Insignia.image = UIImage(named: "productonuev_label.png")
             lbl_TextoInsignia.text = "Producto nuevo"
+            lbl_TextoInsignia.textColor = UIColor.grayColor() //color Personalizado
         case "3":
             imgV_Insignia.image = UIImage(named: "light_label.png")
             lbl_TextoInsignia.text = "Bajo en calorías"
+            lbl_TextoInsignia.textColor = UIColor.greenColor()
         default:
             lbl_TextoInsignia.removeFromSuperview()
+            imgV_Insignia.removeFromSuperview()
         }
     }
 }
