@@ -1,0 +1,1 @@
+{"title":"Clericot","breadcrumb":"Menú – Bebidas - <font color=\"#FEAC0D\">Vinos Tintos</font>","menu":[{"title":"JARRA DE CLERICOT (1 lt)","price":190.0},{"title":"JARRA DE CLERICOT (2 lt)","price":375.0}]}

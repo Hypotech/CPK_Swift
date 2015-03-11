@@ -5,6 +5,7 @@
 //  Created by desarm on 24/02/15.
 //  Copyright (c) 2015 Desarrollo RM. All rights reserved.
 //
+//Clase generica para la creación de la mayoria de menus, mediante herencia
 
 import UIkit
 
@@ -19,11 +20,9 @@ class MenusCPK:UIViewController, UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var img_logoVertical: UIImageView! //logo de la compañia
     @IBOutlet weak var Lbl_NombreFondo: UILabel! //etiqueta para img_fondoMenu
     @IBOutlet weak var lbl_nombreMenu: UILabel!
+    var nombreJSON:String = ""
     
     //.............................. casos especiales ..............................//
-//    var conMensajeIntro:Bool = false
-//    var lbl_introTexto:UILabel! //mensaje Introductorio
-//    var view_imgIntroMenu: UIImageView!//imagen que hace alusión al mensaje intro
     //..............................................................................//
     var menusPlatillos:[CustomCell]{ //getter y setter para Celdas
         get{
@@ -77,7 +76,7 @@ class MenusCPK:UIViewController, UITableViewDataSource, UITableViewDelegate{
         img_fondoMenu.image = imgFondo
         img_logoVertical.image = UIImage(named: "logo_cpk_horizontal.png")
         
-        var ArchivoJSON = JSONParser(ArchivoRuta: "entrada")
+        var ArchivoJSON = JSONParser(ArchivoRuta: nombreJSON)
         var Datos = ArchivoJSON.getHeader(["title","breadcrumb"])
 
         lbl_nombreMenu.text = Datos[0]
@@ -112,16 +111,12 @@ class MenusCPK:UIViewController, UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        var celda = tableView.dequeueReusableCellWithIdentifier("MyCustomCell") as? CustomCell
-//        
-//        if celda == nil {
-//            celda = CustomCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell")
-//        }
+
         
         //--------------------------------  personalizacion de la celda  --------------------------------------
 
         Platillos[indexPath.row].backgroundColor = UIColor(red: 252, green: 252, blue: 252, alpha: 1)
-        Platillos[indexPath.row].rellenarConJSONs("entrada",menuNum: indexPath.row) //Autorellena con el JSON especificado
+        Platillos[indexPath.row].rellenarConJSONs(nombreJSON,menuNum: indexPath.row) //Autorellena con el JSON especificado
         
         Platillos[indexPath.row].setNeedsUpdateConstraints()
         Platillos[indexPath.row].updateConstraintsIfNeeded()
@@ -135,4 +130,8 @@ class MenusCPK:UIViewController, UITableViewDataSource, UITableViewDelegate{
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func IrAMenu(){
+        self.performSegueWithIdentifier("Segue_Menu_Return", sender: self)
+
+    }
 }

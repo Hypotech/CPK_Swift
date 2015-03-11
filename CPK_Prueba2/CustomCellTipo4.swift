@@ -17,7 +17,7 @@ class CustomCellTipo4: CustomCellTipo3 {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         
-        lbl_ConcienciaSoc.backgroundColor = UIColor.greenColor()
+//        lbl_ConcienciaSoc.backgroundColor = UIColor.greenColor()
         lbl_ConcienciaSoc.numberOfLines = 0 //auto
         lbl_ConcienciaSoc.lineBreakMode = .ByWordWrapping
         

@@ -5,7 +5,11 @@
 //  Created by desarm on 03/03/15.
 //  Copyright (c) 2015 Desarrollo RM. All rights reserved.
 //
-// Esta clase agrega el campo de descripción a la clase CustomCellTipo1
+// Esta clase agrega el campo de descripción a la clase CustomCellTipo1, esta clase contiene:
+//
+// - nombre del platillo/menu
+// - precio
+// - descripción
 
 
 import UIKit
@@ -34,7 +38,7 @@ class CustomCellTipo2:CustomCellTipo1 {
         lbl_descripcion.frame = CGRect(x: 0, y: lbl_nombreMenu.frame.height + 10, width: 382, height: 0)
         lbl_descripcion.numberOfLines = 0
         lbl_descripcion.lineBreakMode = .ByWordWrapping
-        lbl_descripcion.backgroundColor = UIColor.yellowColor()
+//        lbl_descripcion.backgroundColor = UIColor.yellowColor()
         //___________________________________________________________________________________________________________
         contentView.addSubview(lbl_descripcion)
     }

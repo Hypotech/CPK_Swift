@@ -41,9 +41,9 @@ class Intro_VC: UIViewController {
 
         if let swipeGesture = send as? UISwipeGestureRecognizer { //casting si es un GestureSwipe
             switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.Left:
-                self.performSegueWithIdentifier("segue_Splash", sender: self)
             case UISwipeGestureRecognizerDirection.Right:
+                self.performSegueWithIdentifier("segue_Splash", sender: self)
+            case UISwipeGestureRecognizerDirection.Left:
                 self.performSegueWithIdentifier("Segue_Menu", sender: self)
             default: break
             }

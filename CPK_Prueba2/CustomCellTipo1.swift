@@ -5,7 +5,10 @@
 //  Created by desarm on 23/02/15.
 //  Copyright (c) 2015 Desarrollo RM. All rights reserved.
 //
-//Celda que representa la descripción de un menu/platillo, el cuál contiene sólo  un nombre y su precio
+//Celda que representa la descripción de un menu/platillo, el cuál contiene:
+//
+// - nombre del platillo/menu
+// - precio
 
 import UIKit
 
@@ -39,13 +42,15 @@ class CustomCellTipo1:CustomCell {
         
         lbl_nombreMenu.numberOfLines = 0
         lbl_nombreMenu.lineBreakMode = .ByWordWrapping
+        lbl_precio.font = UIFont.boldSystemFontOfSize(15.0)
         
-        lbl_nombreMenu.backgroundColor = UIColor.brownColor()
+//        lbl_nombreMenu.backgroundColor = UIColor.brownColor()
         
         lbl_precio.frame = CGRect(x: 472, y: 0, width: 55, height: 40)
         lbl_precio.textAlignment = .Right
-        lbl_precio.backgroundColor = UIColor.blueColor()
+//        lbl_precio.backgroundColor = UIColor.blueColor()
         lbl_precio.font = lbl_precio.font.fontWithSize(17.0)
+        lbl_precio.textColor = UIColor.orangeColor()
         
 //        println(lbl_nombreMenu.font)
 //        println("\(lbl_precio.frame.minX)")

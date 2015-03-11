@@ -58,6 +58,7 @@ class JSONParser {
         if (menuNumero < tempElements.count!) //el menu solicitado esta dentro del rango
         {
             for( var i = 0; i < campos.count; i++ ){ //hacer hasta obtener todos los campos
+//                println(campos[i])
                 
                 if (tiposCampos[campos[i]] == tipo.Cadena){
                     resultMenu.append( (tempElements[menuNumero].objectForKey(campos[i]) as String) )
@@ -87,8 +88,10 @@ class JSONParser {
         var desAppend: String = String()
         
         for var i = 0; i < descricion.count; i++ {
-            desAppend += descricion[i].objectForKey("text") as String  + "<br>"//concatenar
-            //println(desAppend)
+            desAppend += descricion[i].objectForKey("text") as String //concatenar
+            if (i != descricion.count - 1){
+                desAppend += "<br>" //agremos salto de linea
+            }
         }
         
         return desAppend

@@ -13,6 +13,7 @@ class Menu_VC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var Im_logoCPK: UIImageView!
     @IBOutlet weak var tbale: UITableView!
     
+    @IBOutlet weak var viewBlack: UIView!
     var arrayMenus: [String] = [String] ()
     
     override func viewDidLoad() {
@@ -23,11 +24,14 @@ class Menu_VC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         
         var gestoIzquierda = UISwipeGestureRecognizer(target:self,action:"SwipeHandler:")
         gestoIzquierda.direction = UISwipeGestureRecognizerDirection.Left
+        gestoIzquierda.cancelsTouchesInView = false
         self.view.addGestureRecognizer(gestoIzquierda)
-        
+        viewBlack.addGestureRecognizer(gestoIzquierda)
         var gestoDerecha = UISwipeGestureRecognizer(target:self,action:"SwipeHandler:")
         gestoDerecha.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(gestoDerecha)
+        gestoDerecha.cancelsTouchesInView = false
+        viewBlack.addGestureRecognizer(gestoDerecha)
         
         self.initMenus() //agregamos los menus
         
@@ -61,10 +65,10 @@ class Menu_VC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         animCell.textLabel.text = arrayMenus[indexPath.row]
 
         //--------------------------------  personalizacion de la celda  --------------------------------------
-        var imgTm = UIImageView(frame:CGRect(x: 0, y: 0, width: 40, height: 15))
+        var imgFlecha = UIImageView(frame:CGRect(x: 0, y: 0, width: 40, height: 15))
         
-        imgTm.image = UIImage(named: "flecha_siguiente_blanco.png") //imagen para el accesoryView
-        animCell.accessoryView = imgTm
+        imgFlecha.image = UIImage(named: "flecha_siguiente_blanco.png") //imagen para el accesoryView
+        animCell.accessoryView = imgFlecha
         
         animCell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         animCell.textLabel.textColor = UIColor(red: 252, green: 217, blue: 0, alpha: 1)
@@ -72,15 +76,47 @@ class Menu_VC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         //  ---------------------------------------------------------------------------------------------------
         return animCell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        println("Celda numero: \(indexPath.row)")
+        
+        if (indexPath.row == 0){
+            self.performSegueWithIdentifier("Segue_Entradas", sender: self)
+        }
+        else if(indexPath.row == 1){
+            self.performSegueWithIdentifier("Segue_Ensaladas", sender: self)
+        }
+        else if(indexPath.row == 2){
+            self.performSegueWithIdentifier("Segue_Sopas", sender: self)
+        }
+        else if(indexPath.row == 3){
+            self.performSegueWithIdentifier("Segue_Sandwiches", sender: self)
+        }
+        else if(indexPath.row == 4){
+            self.performSegueWithIdentifier("Segue_Pastas", sender: self)
+        }
+        else if(indexPath.row == 5){
+            self.performSegueWithIdentifier("Segue_Pizzas", sender: self)
+        }
+        else if(indexPath.row == 6){
+            self.performSegueWithIdentifier("Segue_Selecciones_ligeras", sender: self)
+        }
+        else if(indexPath.row == 7){
+            self.performSegueWithIdentifier("Segue_Especialidades", sender: self)
+        }
+        else if(indexPath.row == 8){
+            self.performSegueWithIdentifier("Segue_Bebidas", sender: self)
+        }
+    }
     //#############################################################################################################
     
     @IBAction func SwipeHandler(send: UIGestureRecognizer){
         
         if let swipeGesture = send as? UISwipeGestureRecognizer { //casting si es un GestureSwipe
             switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.Left:
-                self.performSegueWithIdentifier("Segue_IntroReturn", sender: self)
             case UISwipeGestureRecognizerDirection.Right:
+                self.performSegueWithIdentifier("Segue_IntroReturn", sender: self)
+            case UISwipeGestureRecognizerDirection.Left:
                 self.performSegueWithIdentifier("Segue_Entradas", sender: self)
             default: break
             }
@@ -88,7 +124,6 @@ class Menu_VC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     }
     
     func initMenus(){
-//        var tmpMenus:NSArray = [Menu(nombre:"Entradas"),Menu(nombre:"Ensaladas"),Menu(nombre:"Sopas"),Menu(nombre:"Sandwiches"),Menu(nombre:"Pastas"),Menu(nombre:"Pizzas"),Menu(nombre:"Selecciones ligeras"),Menu(nombre:"Especialidades"),Menu(nombre:"Bebidas")]
         var tmpMenus:[String] = ["Entradas","Ensaladas","Sopas","Sandwiches","Pastas","Pizzas","Selecciones ligeras","Especialidades","Bebidas"]
         
         for i in tmpMenus{
@@ -96,4 +131,15 @@ class Menu_VC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         }
 
     }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+//        if segue.identifier == "Segue_IntroReturn" {
+//            let vc = segue.destinationViewController as Intro_VC
+//        }
+//        
+//        else if segue.identifier == "Segue_Entradas" {
+//            let vc = segue.destinationViewController as Entradas_VC
+//        }
+//    }
+    
 }

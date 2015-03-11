@@ -22,10 +22,10 @@ class ViewController: UIViewController {
         Img_tagline.image = UIImage(named: "tagline.png")
         Img_gesto_icon.image = UIImage(named: "gesto_icon.png")
 
-        let RecognizerRight = UISwipeGestureRecognizer(target: self, action: Selector("gotoIntro:"))
+        let RecognizerLeft = UISwipeGestureRecognizer(target: self, action: Selector("gotoIntro:"))
         
-        RecognizerRight.direction = UISwipeGestureRecognizerDirection.Right
-        self.view.addGestureRecognizer(RecognizerRight)
+        RecognizerLeft.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(RecognizerLeft)
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

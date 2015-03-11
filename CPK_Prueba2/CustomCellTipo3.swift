@@ -5,7 +5,13 @@
 //  Created by desarm on 03/03/15.
 //  Copyright (c) 2015 Desarrollo RM. All rights reserved.
 //
-// Esta clase agrega los campos de insignia a la clase CustomCellTipo2
+// Esta clase agrega los campos de insignia a la clase CustomCellTipo2, esta clase contiene:
+//
+// - nombre del platillo/menu
+// - precio
+// -descripción
+// - imagen insignia
+// - texto con alución a la imagen insignia
 
 import UIKit
 
@@ -37,7 +43,7 @@ class CustomCellTipo3: CustomCellTipo2 {
         var ArchivoJSON = JSONParser(ArchivoRuta: archivo)
         var dtosCadena = ArchivoJSON.GetSpecificMenu(["badge"], menuNumero: menuNum)
 
-        println("badge: " + dtosCadena[0])
+//        println("badge: " + dtosCadena[0])
         
         switch (dtosCadena[0]){
         case "1":

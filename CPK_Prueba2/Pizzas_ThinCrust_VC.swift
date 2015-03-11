@@ -1,36 +1,34 @@
 //
-//  Entradas_VC.swift
+//  Pizzas_ThinCrust_VC.swift
 //  CPK_Prueba2
 //
-//  Created by desarm on 23/02/15.
+//  Created by desarm on 09/03/15.
 //  Copyright (c) 2015 Desarrollo RM. All rights reserved.
 //
 
-import UIKit
+import UIkit
 
-
-class Entradas_VC:MenusCPK{
-
-    var arraysPlatillos: [CustomCell] = [
-        CustomCellTipo4(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
-        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
-        CustomCellTipo3(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
-        CustomCellTipo3(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
-        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
-        CustomCellTipo3(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
-        CustomCellTipo3(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
-        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell")
-    ]
+class Pizzas_ThinCrust_VC:MenusCPK {
     
-    var Myfondo: UIImage = UIImage(named: "entradas_foto.jpg")!
+    var arraysPlatillos: [CustomCell] = [
+        CustomCellTipo3(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo3(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo3(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+        CustomCellTipo2(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyCustomCell"),
+    ]
+    var Myfondo: UIImage = UIImage(named: "pizzasthin_foto.jpg")!
     
     override func viewDidLoad() {
         
         ////// inicializando variables ///////
         super.menusPlatillos = arraysPlatillos
         super.platoFondo = Myfondo
-        super.NombreFondo = "WRAPS DE LECHUGA CON POLLO A LA NARANJA"
-        super.nombreJSON = "entrada"
+        super.nombreJSON = "pizza_thin"
+        super.NombreFondo = "SICILIANA"
         ////////////////////////////////////
         var gestoIzquierda = UISwipeGestureRecognizer(target: self, action: "gestoManejador:") //notar los dos puntos al final de gestoManejador
         gestoIzquierda.direction = UISwipeGestureRecognizerDirection.Left
@@ -40,14 +38,7 @@ class Entradas_VC:MenusCPK{
         
         self.view.addGestureRecognizer(gestoIzquierda)
         self.view.addGestureRecognizer(gestoDerecha)
-//        
-//        var cabeceras:[String] = ["title","breadcrumb"]
-//        var camposMenus:[String] = ["title","price", "badge","extratext","description","text"]
-//        
-//        var test = JSONParser(ArchivoRuta: "entrada")
-//        
-//        test.GetHeader(cabeceras)
-//        test.GetSpecificMenu(camposMenus, menuNumero: 0)
+
         
         super.viewDidLoad()
     }
@@ -61,9 +52,9 @@ class Entradas_VC:MenusCPK{
         if let swipeGesture = send as? UISwipeGestureRecognizer { //casting si es un GestureSwipe
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
-                self.performSegueWithIdentifier("Segue_Menu_Return", sender: self)
+                self.performSegueWithIdentifier("Segue_Pizza_Menu_Return", sender: self)
             case UISwipeGestureRecognizerDirection.Left:
-                self.performSegueWithIdentifier("Segue_Ensaladas", sender: self)
+                self.performSegueWithIdentifier("Segue_Pizza_Masa_Tradi", sender: self)
             default: break
             }
         }
