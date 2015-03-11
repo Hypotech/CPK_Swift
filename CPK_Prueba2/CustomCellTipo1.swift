@@ -25,7 +25,6 @@ class CustomCellTipo1:CustomCell {
         var newFrame:CGRect = lbl_nombreMenu.frame;
         newFrame.size.height = expectSize.height;
         lbl_nombreMenu.frame = newFrame
-        
     }
    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
@@ -42,14 +41,18 @@ class CustomCellTipo1:CustomCell {
         
         lbl_nombreMenu.numberOfLines = 0
         lbl_nombreMenu.lineBreakMode = .ByWordWrapping
-        lbl_precio.font = UIFont.boldSystemFontOfSize(15.0)
+        lbl_precio.font = UIFont(name: /*lbl_precio.font.fontName + */"HelveticaNeueInterface-Bold", size: 15.0)
+        
+        println(lbl_precio.font.fontName)
+        
+//        lbl_precio.font = UIFont.boldSystemFontOfSize(15.0)
         
 //        lbl_nombreMenu.backgroundColor = UIColor.brownColor()
         
         lbl_precio.frame = CGRect(x: 472, y: 0, width: 55, height: 40)
         lbl_precio.textAlignment = .Right
 //        lbl_precio.backgroundColor = UIColor.blueColor()
-        lbl_precio.font = lbl_precio.font.fontWithSize(17.0)
+//        lbl_precio.font = lbl_precio.font.fontWithSize(17.0)
         lbl_precio.textColor = UIColor.orangeColor()
         
 //        println(lbl_nombreMenu.font)
